@@ -1,0 +1,217 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "PF Pixelscript";
+    src: url("./assets/PFPixelscriptPro-subset.otf") format("opentype");
+}
+
+
+
+/************************       THIN (100)     *************************/
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('./assets/cooperHewitt/CooperHewitt-ThinItalic.woff2') format('woff2');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('./assets/cooperHewitt/CooperHewitt-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/************************       LIGHT (300)     *************************/
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('./assets/cooperHewitt/CooperHewitt-LightItalic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('./assets/cooperHewitt/CooperHewitt-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/************************       BOOK (400)     *************************/
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('./assets/cooperHewitt/CooperHewitt-Book.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('./assets/cooperHewitt/CooperHewitt-BookItalic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
+/************************       MEDIUM (500)     *************************/
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('./assets/cooperHewitt/CooperHewitt-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('./assets/cooperHewitt/CooperHewitt-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/************************       SEMIBOLD (600)     *************************/
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('./assets/cooperHewitt/CooperHewitt-SemiboldItalic.woff2') format('woff2');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('./assets/cooperHewitt/-Semibold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+/************************       BOLD (700)     *************************/
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('./assets/cooperHewitt/CooperHewitt-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('./assets/cooperHewitt/CooperHewitt-BoldItalic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
+/************************       HEAVY (900)     *************************/
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('./assets/cooperHewitt/CooperHewitt-Heavy.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('./assets/cooperHewitt/CooperHewitt-HeavyItalic.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
+
+
+
+
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+    font-family: 'Cooper Hewitt', Courier, monospace;
+    font-weight: 400;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    /* 4. Add accessible line-height */
+    line-height: 1.5;
+    /* 5. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+    isolation: isolate;
+}

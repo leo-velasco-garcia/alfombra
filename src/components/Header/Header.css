@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    width: 100vw;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+
+}
+@font-face {
+    font-family: "PF Pixelscript";
+    src: url("../../assets/PFPixelscriptPro-subset.otf") format("opentype");
+}
+.header .titulo{
+    color: black;
+    text-decoration: none;
+    transition: 200ms ease-in-out;
+    font-size: 2rem;
+    font-family: "PF Pixelscript";
+    letter-spacing: -1.5px;
+}
+.header .s{
+    color: black;
+}
+.header .n{
+    color: #555;
+}
+
+.header .titulo:hover{
+    color: rgb(162, 70, 70);
+}
+
+.header .enlaces {
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.header .enlaces .enlace{
+    color: black;
+    text-decoration: none;
+    transition: 200ms ease-in-out;
+    padding: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.header .enlaces .enlace:hover{
+    color: rgb(255, 23, 23);
+}
+
+.header .enlaces .enlaceseleccionado{
+    border: 1px solid black;
+}
