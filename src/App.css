@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.colocador{
+    /* border: 1px solid red; */
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+}
+

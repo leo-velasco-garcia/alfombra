@@ -1,0 +1,75 @@
+.oculto{
+    display: none;
+}
+
+
+
+.preguntas{
+    height: 100%;
+    width: 100%;
+    max-width: 60rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+.preguntas .headerPreguntas{
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-flow: column;   
+}
+
+.preguntas span{
+    text-align: end;
+    font-size: 0.8rem;
+}
+
+
+.preguntas .headerPreguntas .titulo2{
+    font-size: 4rem;
+    margin-top: 1rem;
+    line-height: 4rem;
+    font-weight: 600;
+    
+    /* transform: translateY(1rem); */
+    /* font-family: "PF Pixelscript"; */
+
+}
+
+.preguntas .headerPreguntas .parrafo{
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: end;
+}
+
+.preguntas .botones{
+    display: flex;
+    flex-flow: row;
+    gap: 1rem;
+    justify-content: flex-end;
+    width: 100%;
+    /* border: 1px salmon solid; */
+}
+
+.preguntas .sliders{
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;    
+}
+
+.preguntas .sliders .slider{
+    display: grid;
+    grid-template-columns: 8rem 1fr 8rem;
+    gap: 2rem;
+    align-items: center;
+}
+
+.preguntas .sliders .labelIzq{
+    width: 100%;
+    text-align: end;
+}
+
+.preguntas .sliders .label{
+    font-size: 1.5rem;
+}

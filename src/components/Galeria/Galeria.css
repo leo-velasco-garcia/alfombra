@@ -1,0 +1,40 @@
+.galeria {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.galeria .headerGaleria{
+    /* background-color: rgb(207, 255, 239); */
+    padding: 0.5rem 1rem;
+}
+
+.galeria .headerGaleria .titulo2 {
+    font-size: 1.5rem;
+    /* align-self: center; */
+}
+
+.galeria .content {
+    /* background-color: rgb(232, 207, 255); */
+    height: 100%;
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    overflow-y: scroll;
+}
+
+.galeria .buttoncontrol{
+    /* background-color: chocolate; */
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+
+.oculto{
+    display: none;
+}

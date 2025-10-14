@@ -1,0 +1,17 @@
+.Button{
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+    /* border-radius: 5rem; */
+    transition: 200ms ease-in-out;
+    border: 0;
+
+    font-weight: 500;
+    /* text-transform: uppercase; */
+    line-height: 1.5rem;
+}
+
+.Button:hover{
+    /* filter: brightness(80%); */
+    transform: scale(105%);
+}
+
