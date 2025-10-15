@@ -11,131 +11,132 @@
 
 
 
-/************************       THIN (100)     *************************/
 @font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('./assets/cooperHewitt/CooperHewitt-ThinItalic.woff2') format('woff2');
-    font-weight: 100;
-    font-style: italic;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('./assets/cooperHewitt/CooperHewitt-Thin.woff2') format('woff2');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-
-/************************       LIGHT (300)     *************************/
-@font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('./assets/cooperHewitt/CooperHewitt-LightItalic.woff2') format('woff2');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('./assets/cooperHewitt/CooperHewitt-Light.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-
-/************************       BOOK (400)     *************************/
-@font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('./assets/cooperHewitt/CooperHewitt-Book.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('./assets/cooperHewitt/CooperHewitt-BookItalic.woff2') format('woff2');
-    font-weight: 400;
+    font-family: 'Fracktif';
+    src: url('./assets/Fracktif/Fracktif-BoldItalic.woff2') format('woff2'),
+        url('./assets/Fracktif/Fracktif-BoldItalic.woff') format('woff');
+    font-weight: bold;
     font-style: italic;
     font-display: swap;
 }
 
-
-
-/************************       MEDIUM (500)     *************************/
 @font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('./assets/cooperHewitt/CooperHewitt-MediumItalic.woff2') format('woff2');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('./assets/cooperHewitt/CooperHewitt-Medium.woff2') format('woff2');
+    font-family: 'Fracktif';
+    src: url('./assets/Fracktif/Fracktif-Medium.woff2') format('woff2'),
+        url('./assets/Fracktif/Fracktif-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
-
-
-/************************       SEMIBOLD (600)     *************************/
 @font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('./assets/cooperHewitt/CooperHewitt-SemiboldItalic.woff2') format('woff2');
+    font-family: 'Fracktif';
+    src: url('./assets/Fracktif/Fracktif-Bold.woff2') format('woff2'),
+        url('./assets/Fracktif/Fracktif-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fracktif Semi';
+    src: url('./assets/Fracktif/Fracktif-SemiBold.woff2') format('woff2'),
+        url('./assets/Fracktif/Fracktif-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fracktif';
+    src: url('./assets/Fracktif/Fracktif-ExtraBoldItalic.woff2') format('woff2'),
+        url('./assets/Fracktif/Fracktif-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fracktif';
+    src: url('./assets/Fracktif/Fracktif-ExtraLight.woff2') format('woff2'),
+        url('./assets/Fracktif/Fracktif-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fracktif';
+    src: url('./assets/Fracktif/Fracktif-RegularItalic.woff2') format('woff2'),
+        url('./assets/Fracktif/Fracktif-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fracktif';
+    src: url('./assets/Fracktif/Fracktif-Regular.woff2') format('woff2'),
+        url('./assets/Fracktif/Fracktif-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fracktif';
+    src: url('./assets/Fracktif/Fracktif-ExtraBold.woff2') format('woff2'),
+        url('./assets/Fracktif/Fracktif-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fracktif';
+    src: url('./assets/Fracktif/Fracktif-MediumItalic.woff2') format('woff2'),
+        url('./assets/Fracktif/Fracktif-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fracktif';
+    src: url('./assets/Fracktif/Fracktif-LightItalic.woff2') format('woff2'),
+        url('./assets/Fracktif/Fracktif-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fracktif Semi';
+    src: url('./assets/Fracktif/Fracktif-SemiBoldItalic.woff2') format('woff2'),
+        url('./assets/Fracktif/Fracktif-SemiBoldItalic.woff') format('woff');
     font-weight: 600;
     font-style: italic;
     font-display: swap;
 }
+
 @font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('./assets/cooperHewitt/-Semibold.woff2') format('woff2');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-
-
-
-/************************       BOLD (700)     *************************/
-@font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('./assets/cooperHewitt/CooperHewitt-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('./assets/cooperHewitt/CooperHewitt-BoldItalic.woff2') format('woff2');
-    font-weight: 700;
+    font-family: 'Fracktif';
+    src: url('./assets/Fracktif/Fracktif-ExtraLightItalic.woff2') format('woff2'),
+        url('./assets/Fracktif/Fracktif-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
     font-style: italic;
     font-display: swap;
 }
 
-
-
-/************************       HEAVY (900)     *************************/
 @font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('./assets/cooperHewitt/CooperHewitt-Heavy.woff2') format('woff2');
-    font-weight: 900;
+    font-family: 'Fracktif';
+    src: url('./assets/Fracktif/Fracktif-Light.woff2') format('woff2'),
+        url('./assets/Fracktif/Fracktif-Light.woff') format('woff');
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
-@font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('./assets/cooperHewitt/CooperHewitt-HeavyItalic.woff2') format('woff2');
-    font-weight: 900;
-    font-style: italic;
-    font-display: swap;
-}
+
 
 
 
@@ -147,7 +148,7 @@
 /* 2. Remove default margin */
 * {
     margin: 0;
-    font-family: 'Cooper Hewitt', Courier, monospace;
+    font-family: 'Fracktif', Courier, monospace;
     font-weight: 400;
 }
 
