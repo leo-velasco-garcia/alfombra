@@ -1,17 +1,17 @@
 .Button{
-    border: 1px solid black;
+    border: var(--border-thick) solid var(--ink);
     padding: 0.5rem 1rem;
-    /* border-radius: 5rem; */
-    transition: 200ms ease-in-out;
-    border: 0;
-
-    font-weight: 500;
-    /* text-transform: uppercase; */
+    transition: 150ms ease-in-out;
+    background: #fff;
+    font-weight: 700;
     line-height: 1.5rem;
+    letter-spacing: 0.02em;
 }
 
-.Button:hover{
-    /* filter: brightness(80%); */
-    transform: scale(105%);
-}
+.Button:hover{ transform: translate(-1px, -1px);} 
+
+/* Accent variants via data attributes */
+.Button[data-variant="orange"]{ background: var(--accent-orange); color: #fff; }
+.Button[data-variant="green"]{ background: var(--accent-green); color: #0c2818; }
+.Button[data-variant="outline"]{ background: transparent; }
 

@@ -3,27 +3,29 @@
     width: 100%;
     display: flex;
     flex-flow: column;
-    /* border: 1px solid red; */
     padding: 1rem;
+    background-color: var(--bg);
+    background-image:
+        linear-gradient(to right, rgba(0,0,0,.06) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0,0,0,.06) 1px, transparent 1px);
+    background-size: 24px 24px;
 }
 .reveal .contenedorCard{
     display: flex;
     height: 100%;
     width: 100%;
-    border: 1px solid brown;
-    justify-content: space-between;
+    border: var(--border-thick) solid var(--ink);
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 1rem;
+    gap: 1rem;
 }
 
 .reveal .contenedorCard .card{
-    max-width: 100%;
+    max-width: min(48rem, 100%);
+    width: 100%;
     max-height: 100%;
-    aspect-ratio: 1;
 }
-.reveal .buttoncontrol{
-    /* background-color: chocolate; */
-    position: absolute;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    
-}
+.reveal .contenedorCard .placeholder{ text-align: center; padding: 2rem; }
+.reveal .buttoncontrol{ margin-top: 1rem; align-self: center; }

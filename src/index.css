@@ -165,6 +165,52 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+/* THEME: inspired by references — hi-contrast, retro print, grid, halftone */
+:root{
+    --bg: #f3f3f3;
+    --ink: #0a0a0a;
+    --muted: #6b6b6b;
+    --accent-orange: #ff7a00; /* zine spot */
+    --accent-green: #2ecc71;  /* poster green */
+    --accent-graphite: #d9d9d9; /* paper blocks */
+    --border-thick: 2px;
+}
+
+html, body, #root{ height:100%; background: var(--bg); color: var(--ink); }
+
+/* Grid paper background utility */
+.grid-paper{
+    background-color: var(--bg);
+    background-image:
+        linear-gradient(to right, rgba(0,0,0,.06) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0,0,0,.06) 1px, transparent 1px);
+    background-size: 24px 24px;
+}
+
+/* Halftone dot utility for blocks */
+.halftone{
+    background-image: radial-gradient(currentColor 1px, transparent 1.5px);
+    background-size: 6px 6px;
+    opacity: .25;
+}
+
+/* Titling weight utilities (keep existing fonts) */
+.title-xl{ font-weight: 900; letter-spacing: -0.5px; }
+.title-lg{ font-weight: 700; letter-spacing: -0.25px; }
+.small-caps{ text-transform: uppercase; letter-spacing: .08em; font-weight: 600; }
+
+/* Universal link look: black, underline on hover */
+a{ color: var(--ink); text-decoration: none; }
+a:hover{ text-decoration: underline; text-underline-offset: 2px; }
+
+/* Framed blocks */
+.frame{ border: var(--border-thick) solid var(--ink); background: #fff; }
+
+/* Accent helpers */
+.accent-orange{ color: var(--accent-orange); }
+.accent-green{ color: var(--accent-green); }
+
+
 /* 6. Improve media defaults */
 img,
 picture,

@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <header className="header">
             {/* <h1 className="titulo">Alfombra</h1> */}
-            <a href="#"  className={page == "Landing"? "titulo s" : "titulo n"} onClick={() => setPage("Landing")}>Hebras</a>
+            <a href="#"  className={page == "Landing"? "titulo s" : "titulo n"} onClick={() => setPage("Landing")}>Nethera</a>
             <div className="enlaces">
                 {page !== "Preguntas" ? <a href="#"  className={page == "Gallery"? "enlace enlaceseleccionado" : "enlace"} onClick={() => page !== "Preguntas" ? setPage("Gallery"):null }>Galería</a>: null}
                 {page !== "Preguntas" ? <a href="#"  className={page == "About"? "enlace enlaceseleccionado" : "enlace"} onClick={() => page !== "Preguntas" ? setPage("About"):null}>Sobre el proyecto</a>: null}

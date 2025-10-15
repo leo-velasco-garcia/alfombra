@@ -1,9 +1,10 @@
-import React, { use, useEffect } from 'react'
+import React, { use, useEffect, useLayoutEffect, useRef } from 'react'
 import Button from '../Otros/Button'
 import "./Preguntas.css"
 import { Alert, Slider } from '@mui/material'
 import { useContext, useState } from 'react'
 import { AppContext } from '../../AppContext'
+import { gsap } from 'gsap'
 
 
 
@@ -131,8 +132,19 @@ const Preguntas = () => {
 
 
 
+    const rootRef = useRef(null)
+
+    useLayoutEffect(() => {
+        if(page !== 'Preguntas') return;
+        const ctx = gsap.context(() => {
+            gsap.from([".headerPreguntas .titulo2", ".headerPreguntas .parrafo"], {opacity:0, y:16, duration:.5, stagger:.1, ease:"power2.out"});
+            gsap.from([".sliders", ".botones"], {opacity:0, y:10, duration:.4, stagger:.1, delay:.2});
+        }, rootRef)
+        return () => ctx.revert()
+    }, [page])
+
     return (
-        <section className={page == "Preguntas" ? "preguntas" : "oculto"}>
+        <section ref={rootRef} className={page == "Preguntas" ? "preguntas" : "oculto"}>
             <span>{completadas.length} pregunta{completadas.length !== 1 ? "s" : ""} completada{completadas.length !== 1 ? "s" : ""}. {completadas.length < 8 ? "Necesitas al menos " + (8 - completadas.length) + " más para crear una alfombra" : " Puedes crear la alfombra cuando quieras."}</span>
             <div className="headerPreguntas">
                 <h2 className="titulo2">Recuerda...</h2>

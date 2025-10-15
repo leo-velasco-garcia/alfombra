@@ -3,12 +3,11 @@
     width: 100%;
     display: flex;
     flex-flow: column;
-    /* border: 1px solid red; */
     padding: 1rem;
+    background: var(--bg);
 }
 
 .landing .buttoncontrol{
-    /* background-color: chocolate; */
     position: absolute;
     bottom: 2rem;
     left: 50%;

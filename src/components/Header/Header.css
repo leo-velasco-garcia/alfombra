@@ -1,53 +1,41 @@
 .header {
     display: flex;
     width: 100vw;
-    padding: 1rem;
+    padding: 0.75rem 1rem;
     justify-content: space-between;
     align-items: center;
-    /* border: 1px solid red; */
-
+    border-bottom: var(--border-thick) solid var(--ink);
+    background: var(--bg);
 }
 @font-face {
     font-family: "PF Pixelscript";
     src: url("../../assets/PFPixelscriptPro-subset.otf") format("opentype");
 }
 .header .titulo{
-    color: black;
+    color: var(--ink);
     text-decoration: none;
-    transition: 200ms ease-in-out;
+    transition: 150ms ease-in-out;
     font-size: 2rem;
     font-family: "PF Pixelscript";
     letter-spacing: -1.5px;
 }
-.header .s{
-    color: black;
-}
-.header .n{
-    color: #555;
-}
+.header .s{ color: var(--ink); }
+.header .n{ color: var(--muted); }
 
 .header .titulo:hover{
-    color: rgb(162, 70, 70);
+    color: var(--accent-orange);
 }
 
-.header .enlaces {
-    display: flex;
-    gap: 1rem;
-    
-}
+.header .enlaces { display: flex; gap: 0.5rem; }
 
 .header .enlaces .enlace{
-    color: black;
+    color: var(--ink);
     text-decoration: none;
-    transition: 200ms ease-in-out;
-    padding: 0.5rem;
-    border: 1px solid rgba(0, 0, 0, 0);
+    transition: 120ms ease-in-out;
+    padding: 0.25rem 0.5rem;
+    border: var(--border-thick) solid transparent;
 }
 
-.header .enlaces .enlace:hover{
-    color: rgb(255, 23, 23);
-}
+.header .enlaces .enlace:hover{ color: var(--accent-green); }
 
-.header .enlaces .enlaceseleccionado{
-    border: 1px solid black;
-}
+.header .enlaces .enlaceseleccionado{ border-color: var(--ink); }
