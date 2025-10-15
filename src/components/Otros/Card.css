@@ -14,16 +14,6 @@
     position: relative;
 }
 
-.card .imgCard::after{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: radial-gradient(#000 0.9px, transparent 1.2px);
-    background-size: 6px 6px;
-    opacity: .08; /* subtle halftone overlay */
-    pointer-events: none;
-}
-
 .card .descripcionCard{
     display: flex;
     justify-content: space-between;
