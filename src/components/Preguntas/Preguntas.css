@@ -20,6 +20,17 @@
     margin: 0 auto;
 }
 
+.preguntas .colocador{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    height: 3rem;
+    width: 100%;
+    border: 2px solid black;
+    background-color: var(--bg);
+    padding: 1rem;
+}
+
 .preguntas .headerPreguntas{
     /* background-color: aquamarine; */
     display: flex;
@@ -87,8 +98,12 @@
 
 .preguntas .sliders .label{
     font-size: 1.5rem;
+    /* font-weight: 600; */
 }
 
+.preguntas .sliders .labelDcha{
+    text-align: start;
+}
 /* MUI slider theming */
 .preguntas .MuiSlider-root{ color: var(--ink); height: 4px; }
 .preguntas .MuiSlider-rail{ opacity: 1; background-color: var(--ink); height: 2px; }

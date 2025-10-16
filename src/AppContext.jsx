@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 export const AppContext = createContext(null);
 export const AppContextProvider = (props) => {
 
-    const [page, setPage] = useState("Gallery");
+    const [page, setPage] = useState("Gallery"); // AQUÍ SE CAMBIA LA PÁGINA QUE APARECE DE INICIO
     const [num, setNum] = useState();
     const [slider01, setSlider01] = useState(50)
     const [slider02, setSlider02] = useState(50)
@@ -24,6 +24,12 @@ export const AppContextProvider = (props) => {
     const [prov, setProv] = useState({"nombre": "Usuario anónimo",
             "fecha": "En algún lugar del tiempo",
             "respuestas": []})
+
+    const colores = [84,118,20,
+                    218,242,187,
+                    208,85,79,
+                    86,9,5
+    ]
 
 
     
@@ -97,7 +103,8 @@ export const AppContextProvider = (props) => {
         completadas, setCompletadas,
         guardarDatos,
         mosaicos, setMosaicos,
-        listaPreguntas
+        listaPreguntas,
+        colores
     };
 
     useEffect(() =>{

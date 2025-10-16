@@ -5,7 +5,7 @@ import { AppContext } from '../../AppContext'
 
 const Card = ({ nombre, fecha, respuestas, nuevoV }) => {
 
-    const {page} = useContext(AppContext);
+    const {page, colores} = useContext(AppContext);
     function interpolateColor(aa, bb, cc, dd, ee, ff, p, q) {
 
         let nuevoR = Math.round(aa + (dd - aa) * p);
@@ -25,12 +25,12 @@ const Card = ({ nombre, fecha, respuestas, nuevoV }) => {
 
                         // Cuando i es par vuelve a recorrer el array. En este caso se pregunta si la vez que lo recorre es par o impar (con j) para saltarse uno (porque tiene que ir de dos en dos)
                         j % 2 == 0 ?
-                            <div style={{ gridArea: (j + 1) + " / " + (i + 1) + " / " + (j + 2) + " / " + (i + 2), backgroundColor: "rgb(" + interpolateColor(255, 255, 255, 0, 95, 247, respuestas[i][0]) + ")" }} key={j + i} ></div>
+                            <div style={{ gridArea: (j + 1) + " / " + (i + 1) + " / " + (j + 2) + " / " + (i + 2), backgroundColor: "rgb(" + interpolateColor(colores[0], colores[1], colores[2], colores[3], colores[4], colores[5],  respuestas[i][0]) + ")" }} key={j + i} ></div>
                             : null
                     )
                     ) : respuestas.map((sub, j) => (
                         ((j + 1) < respuestas.length) && (j % 2 == 0) ?
-                            <div style={{ gridArea: (j + 2) + " / " + (i + 1) + " / " + (j + 3) + " / " + (i + 2), backgroundColor: "rgb(" + interpolateColor(255, 255, 255, 0, 95, 247, respuestas[i][0]) + ")" }} key={j + i} ></div>
+                            <div style={{ gridArea: (j + 2) + " / " + (i + 1) + " / " + (j + 3) + " / " + (i + 2), backgroundColor: "rgb(" + interpolateColor(colores[0], colores[1], colores[2], colores[3], colores[4], colores[5],  respuestas[i][0]) + ")" }} key={j + i} ></div>
                             : null
                     )
                     )
@@ -50,12 +50,12 @@ const Card = ({ nombre, fecha, respuestas, nuevoV }) => {
                         // Cuando i es par vuelve a recorrer el array. En este caso se pregunta si la vez que lo recorre es par o impar (con j) para saltarse uno (porque tiene que ir de dos en dos)
                         
                         ((j + 1) < respuestas.length) && (j % 2 == 0) ?
-                            <div style={{ gridArea: (i + 1) + " / " + (j + 2) + " / " + (i + 2) + " / " + (j + 3), backgroundColor: "rgb(" + interpolateColor(255, 87, 154, 0, 0, 0, respuestas[i][1]) + ")" }} key={j + i} ></div>
+                            <div style={{ gridArea: (i + 1) + " / " + (j + 2) + " / " + (i + 2) + " / " + (j + 3), backgroundColor: "rgb(" + interpolateColor(colores[6], colores[7], colores[8], colores[9], colores[10], colores[11], respuestas[i][1]) + ")" }} key={j + i} ></div>
                             : null
                     )
                     ) : respuestas.map((sub, j) => (
                         j % 2 == 0 ?
-                            <div style={{ gridArea: (i + 1) + " / " + (j + 1) + " / " + (i + 2) + " / " + (j + 2), backgroundColor: "rgb(" + interpolateColor(255, 87, 154, 0, 0, 0, respuestas[i][1]) + ")" }} key={j + i} ></div>
+                            <div style={{ gridArea: (i + 1) + " / " + (j + 1) + " / " + (i + 2) + " / " + (j + 2), backgroundColor: "rgb(" + interpolateColor(colores[6], colores[7], colores[8], colores[9], colores[10], colores[11], respuestas[i][1]) + ")" }} key={j + i} ></div>
                             : null
                     )
                     )

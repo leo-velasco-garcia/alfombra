@@ -145,7 +145,11 @@ const Preguntas = () => {
 
     return (
         <section ref={rootRef} className={page == "Preguntas" ? "preguntas" : "oculto"}>
+            <div className="colocador">
+                <Button content="Saltar pregunta" color='#e9caa900' border="#e9caa900" onClick={() => siguientePregunta(listaPreguntas, "a")} />
             <span>{completadas.length} pregunta{completadas.length !== 1 ? "s" : ""} completada{completadas.length !== 1 ? "s" : ""}. {completadas.length < 8 ? "Necesitas al menos " + (8 - completadas.length) + " más para crear una alfombra" : " Puedes crear la alfombra cuando quieras."}</span>
+            </div>
+            
             <div className="headerPreguntas">
                 <h2 className="titulo2">Recuerda...</h2>
                 <p className='parrafo'>{"..." + listaPreguntas[num] + "."}</p>
@@ -155,18 +159,18 @@ const Preguntas = () => {
                 <div className="slider">
                     <span className='label labelIzq'>Triste</span>
                     <Slider value={slider01} aria-label="Disabled" track={false} onChange={(ev) => setSlider01(ev.target.value)} />
-                    <span className='label'>Feliz</span>
+                    <span className='label labelDcha'>Feliz</span>
                 </div>
                 <div className="slider">
                     <span className='label labelIzq'>Pasado</span>
                     <Slider value={slider02} aria-label="Disabled" track={false} onChange={(ev) => setSlider02(ev.target.value)} />
-                    <span className='label'>Presente</span>
+                    <span className='label labelDcha'>Presente</span>
                 </div>
             </div>
             <div className="botones">
-                <Button content="Saltar pregunta" color='#e9caa9ff' onClick={() => siguientePregunta(listaPreguntas, "a")} />
-                <Button content="Guardar respuesta e ir a la siguiente pregunta" color='#c0e9a9ff' onClick={() => siguientePregunta(listaPreguntas, "guardar")} />
-                {completadas.length >= 8 ? <Button content="Finalizar cuestionario" color='#a9cce9ff' onClick={() => guardarProv()} /> : null}
+                {completadas.length >= 8 ? <Button content="Crear alfombra" color='#a9cce900' onClick={() => guardarProv()} /> : null}
+                <Button content="Siguiente pregunta" color='#c0e9a9ff' onClick={() => siguientePregunta(listaPreguntas, "guardar")} />
+                
             </div>
         </section>
     )

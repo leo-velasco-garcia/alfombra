@@ -28,6 +28,9 @@ const ModalDatos = () => {
         let fecha = new Date();
         
         let min = fecha.getMinutes();
+        if (min < 10){
+            min = "0" + min
+        }
         let hora = fecha.getHours();
         let dia = fecha.getDate();
         let month = fecha.getMonth();
