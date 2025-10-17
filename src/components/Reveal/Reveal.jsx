@@ -32,10 +32,11 @@ const Reveal = () => {
                         <Button content="Crear la primera" onClick={() => setPage("Preguntas")} />
                     </div>
                 )}
-            </div>
-            <div className="buttoncontrol">
+                <div className="buttoncontrol">
                 <Button content="Ver los del resto de usuarios" onClick={() => setPage("Gallery")} />
             </div>
+            </div>
+            
         </section>
     )
 }
