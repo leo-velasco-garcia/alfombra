@@ -146,12 +146,12 @@ const Preguntas = () => {
     return (
         <section ref={rootRef} className={page == "Preguntas" ? "preguntas" : "oculto"}>
             <div className="colocador">
-                <Button content="Saltar pregunta" color='#e9caa900' border="#e9caa900" onClick={() => siguientePregunta(listaPreguntas, "a")} />
+                <Button content="Saltar pregunta" color='#e9caa900' onClick={() => siguientePregunta(listaPreguntas, "a")} />
             <span>{completadas.length} pregunta{completadas.length !== 1 ? "s" : ""} completada{completadas.length !== 1 ? "s" : ""}. {completadas.length < 8 ? "Necesitas al menos " + (8 - completadas.length) + " más para crear una alfombra" : " Puedes crear la alfombra cuando quieras."}</span>
             </div>
             
             <div className="headerPreguntas">
-                <h2 className="titulo2">Recuerda...</h2>
+                <h2 className="titulo2"><span className='cambioTipo'>Recuerda</span>...</h2>
                 <p className='parrafo'>{"..." + listaPreguntas[num] + "."}</p>
             </div>
             
@@ -169,7 +169,7 @@ const Preguntas = () => {
             </div>
             <div className="botones">
                 {completadas.length >= 8 ? <Button content="Crear alfombra" color='#a9cce900' onClick={() => guardarProv()} /> : null}
-                <Button content="Siguiente pregunta" color='#c0e9a9ff' onClick={() => siguientePregunta(listaPreguntas, "guardar")} />
+                <Button content="Siguiente pregunta" color='#8D9A54' onClick={() => siguientePregunta(listaPreguntas, "guardar")} />
                 
             </div>
         </section>

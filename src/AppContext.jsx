@@ -1,8 +1,10 @@
 import { createContext, useEffect } from "react";
 import React, { useState } from 'react'
+import nombre from "./Naming"
 
 export const AppContext = createContext(null);
 export const AppContextProvider = (props) => {
+
 
     const [page, setPage] = useState("Gallery"); // AQUÍ SE CAMBIA LA PÁGINA QUE APARECE DE INICIO
     const [num, setNum] = useState();
@@ -25,10 +27,11 @@ export const AppContextProvider = (props) => {
             "fecha": "En algún lugar del tiempo",
             "respuestas": []})
 
-    const colores = [84,118,20,
-                    218,242,187,
-                    208,85,79,
-                    86,9,5
+    const colores = [
+                    141,154,84,
+                    15, 42, 29,
+                    89,11,12,
+                    169,93,82
     ]
 
 
@@ -92,6 +95,7 @@ export const AppContextProvider = (props) => {
     ]
 
     const value = {
+        nombre,
         page, setPage,
         num, setNum,
         slider01, setSlider01,

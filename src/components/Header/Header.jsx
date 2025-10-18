@@ -5,11 +5,11 @@ import { useContext } from 'react'
 import { AppContext } from '../../AppContext'
 
 const Header = () => {
-    const {page, setPage, salir, setSalir} = useContext(AppContext);
+    const {nombre, page, setPage, salir, setSalir} = useContext(AppContext);
     return (
         <header className="header">
             {/* <h1 className="titulo">Alfombra</h1> */}
-            <a href="#"  className={page == "Landing"? "titulo s" : "titulo n"} onClick={() => setPage("Landing")}>Nethera</a>
+            <a href="#"  className={page == "Landing"? "titulo s" : "titulo n"} onClick={() => setPage("Landing")}>{nombre}</a>
             <div className="enlaces">
                 {page !== "Preguntas" ? <a href="#"  className={page == "Gallery"? "enlace enlaceseleccionado" : "enlace"} onClick={() => page !== "Preguntas" ? setPage("Gallery"):null }>Galería</a>: null}
                 {page !== "Preguntas" ? <a href="#"  className={page == "About"? "enlace enlaceseleccionado" : "enlace"} onClick={() => page !== "Preguntas" ? setPage("About"):null}>Sobre el proyecto</a>: null}

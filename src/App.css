@@ -6,7 +6,7 @@
 
 .colocador{
     /* border: 1px solid red; */
-    height: calc(100vh - 80px);
+    height: calc(100vh - 82px);
     display: flex;
     justify-content: center;
     overflow-y: hidden;

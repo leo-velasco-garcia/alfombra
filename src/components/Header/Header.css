@@ -1,7 +1,6 @@
 .header {
     display: flex;
     width: 100%;
-    height: 100%;
     padding: 0.75rem 1rem;
     justify-content: space-between;
     align-items: center;
@@ -13,15 +12,15 @@
     src: url("../../assets/PFPixelscriptPro-subset.otf") format("opentype");
 }
 .header .titulo{
-    color: var(--ink);
     text-decoration: none;
     transition: 150ms ease-in-out;
     font-size: 2rem;
     font-family: "PF Pixelscript";
     letter-spacing: -1.5px;
+    padding-top: 0.5rem;
 }
 .header .s{ color: var(--ink); }
-.header .n{ color: var(--muted); }
+.header .n{ color: var(--ink); }
 
 .header .titulo:hover{
     color: var(--accent-orange);
