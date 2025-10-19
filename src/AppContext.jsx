@@ -14,6 +14,7 @@ export const AppContextProvider = (props) => {
     const [salir, setSalir] = useState(false)
     const [vistas, setVistas] = useState([]);
     const [completadas, setCompletadas] = useState([]);
+    const [pixelBlastColor, setPixelBlastColor] = useState("#F374AE");
     const [mosaicos, setMosaicos] = useState([{"nombre": "ZAZO",
             "fecha": "13:01 13/10/2025",
             "respuestas": [[1, 1], [0,0], [0.26, 0.26], [0.43, 0.24], [0.77, 1], [1, 0], [0.68, 0.2], [0.04, 0.24], [0.35, 0.7], [0.98, 0.75]]},
@@ -108,7 +109,8 @@ export const AppContextProvider = (props) => {
         guardarDatos,
         mosaicos, setMosaicos,
         listaPreguntas,
-        colores
+        colores,
+        pixelBlastColor, setPixelBlastColor
     };
 
     useEffect(() =>{

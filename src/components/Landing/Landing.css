@@ -3,7 +3,6 @@
     width: 100%;
     display: flex;
     flex-flow: column;
-    padding: 1rem;
     background: var(--bg);
 }
 
@@ -12,5 +11,6 @@
     bottom: 2rem;
     left: 50%;
     transform: translateX(-50%);
-    
+    z-index: 10;
 }
+
