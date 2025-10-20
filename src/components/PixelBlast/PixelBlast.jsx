@@ -320,7 +320,6 @@ const PixelBlast = ({
   const containerRef = useRef(null);
   const visibilityRef = useRef({ visible: true });
   const speedRef = useRef(speed);
-  const resizeTimeoutRef = useRef(null);
 
   const threeRef = useRef(null);
   const prevConfigRef = useRef(null);
@@ -399,82 +398,17 @@ const PixelBlast = ({
       scene.add(quad);
       const clock = new THREE.Clock();
       const setSize = () => {
-        // Get actual container dimensions
-        const rect = container.getBoundingClientRect();
-        const w = rect.width || container.clientWidth || window.innerWidth;
-        const h = rect.height || container.clientHeight || window.innerHeight;
-        
-        // Ensure minimum dimensions to prevent rendering issues
-        const minSize = 200;
-        const finalWidth = Math.max(w, minSize);
-        const finalHeight = Math.max(h, minSize);
-        
-        // Debug logging
-        console.log('PixelBlast setSize:', {
-          containerRect: rect,
-          clientWidth: container.clientWidth,
-          clientHeight: container.clientHeight,
-          finalWidth,
-          finalHeight,
-          pixelRatio: renderer.getPixelRatio()
-        });
-        
-        renderer.setSize(finalWidth, finalHeight, false);
+        const w = container.clientWidth || 1;
+        const h = container.clientHeight || 1;
+        renderer.setSize(w, h, false);
         uniforms.uResolution.value.set(renderer.domElement.width, renderer.domElement.height);
         if (threeRef.current?.composer)
           threeRef.current.composer.setSize(renderer.domElement.width, renderer.domElement.height);
         uniforms.uPixelSize.value = pixelSize * renderer.getPixelRatio();
       };
       setSize();
-      
-      // Multiple attempts to ensure proper sizing
-      const attemptResize = (attempts = 0) => {
-        if (attempts >= 5) return;
-        
-        const rect = container.getBoundingClientRect();
-        if (rect.width === 0 || rect.height === 0) {
-          setTimeout(() => attemptResize(attempts + 1), 100);
-          return;
-        }
-        
-        setSize();
-      };
-      
-      // Initial attempts
-      setTimeout(() => attemptResize(), 50);
-      setTimeout(() => attemptResize(), 200);
-      setTimeout(() => attemptResize(), 500);
-      
-      const ro = new ResizeObserver((entries) => {
-        // Debounce resize events to prevent excessive calls
-        if (resizeTimeoutRef.current) {
-          clearTimeout(resizeTimeoutRef.current);
-        }
-        
-        resizeTimeoutRef.current = setTimeout(() => {
-          const entry = entries[0];
-          if (entry) {
-            const { width, height } = entry.contentRect;
-            console.log('PixelBlast ResizeObserver:', { width, height });
-            
-            // Only resize if dimensions are valid
-            if (width > 0 && height > 0) {
-              setSize();
-            }
-          }
-        }, 16); // ~60fps
-      });
-      
-      // Observe both the container and the document
+      const ro = new ResizeObserver(setSize);
       ro.observe(container);
-      ro.observe(document.body);
-      
-      // Additional window resize listener as backup
-      const handleWindowResize = () => {
-        console.log('PixelBlast window resize');
-        setTimeout(setSize, 100);
-      };
-      window.addEventListener('resize', handleWindowResize);
       const randomFloat = () => {
         if (typeof window !== 'undefined' && window.crypto?.getRandomValues) {
           const u32 = new Uint32Array(1);
@@ -590,8 +524,7 @@ const PixelBlast = ({
         timeOffset,
         composer,
         touch,
-        liquidEffect,
-        handleWindowResize
+        liquidEffect
       };
     } else {
       const t = threeRef.current;
@@ -623,10 +556,6 @@ const PixelBlast = ({
       const t = threeRef.current;
       t.resizeObserver?.disconnect();
       cancelAnimationFrame(t.raf);
-      if (resizeTimeoutRef.current) {
-        clearTimeout(resizeTimeoutRef.current);
-      }
-      window.removeEventListener('resize', t.handleWindowResize);
       t.quad?.geometry.dispose();
       t.material.dispose();
       t.composer?.dispose();

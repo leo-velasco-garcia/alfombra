@@ -4,7 +4,8 @@ import "./Landing.css"
 import { useContext } from 'react'
 import { AppContext } from '../../AppContext'
 import { gsap } from 'gsap'
-import PixelBlast from '../PixelBlast/PixelBlast';
+import SplitText from "../SplitText/SplitText";
+import  PixelBlast  from '../PixelBlast/PixelBlast';
 
 
 const Landing = () => {
@@ -24,28 +25,44 @@ const Landing = () => {
         }, rootRef)
         return () => ctx.revert()
     }, [page])
-
+    const handleAnimationComplete = () => {
+        console.log('All letters have animated!');
+    };
     return (
         <section ref={rootRef} className={page == "Landing" ? "landing" : "oculto"}>
             <div className="buttoncontrol">
                 <Button content="Quiero crear!" onClick={() => setAbrir(true)} />
             </div>
-            <div className="pixelblast-container">
+            <div className=""><SplitText
+                text="Hello, GSAP!"
+                className="text-2xl font-semibold text-center"
+                delay={100}
+                duration={0.6}
+                ease="power3.out"
+                splitType="chars"
+                from={{ opacity: 0, y: 40 }}
+                to={{ opacity: 1, y: 0 }}
+                threshold={0.1}
+                rootMargin="-100px"
+                textAlign="center"
+                onLetterAnimationComplete={handleAnimationComplete}
+            /></div>
+            <div style={{ width: '100%', height: '600px', position: 'relative' }}>
                 <PixelBlast
-                    variant="square"
-                    pixelSize={10}
-                    color={pixelBlastColor}
-                    patternScale={1}
-                    patternDensity={1.5}
+                    variant="circle"
+                    pixelSize={6}
+                    color="#B19EEF"
+                    patternScale={3}
+                    patternDensity={1.2}
                     pixelSizeJitter={0.5}
                     enableRipples
                     rippleSpeed={0.4}
                     rippleThickness={0.12}
                     rippleIntensityScale={1.5}
                     liquid
-                    liquidStrength={0}
-                    liquidRadius={0}
-                    liquidWobbleSpeed={0}
+                    liquidStrength={0.12}
+                    liquidRadius={1.2}
+                    liquidWobbleSpeed={5}
                     speed={0.6}
                     edgeFade={0.25}
                     transparent
