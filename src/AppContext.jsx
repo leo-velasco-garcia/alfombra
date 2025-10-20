@@ -6,7 +6,7 @@ export const AppContext = createContext(null);
 export const AppContextProvider = (props) => {
 
 
-    const [page, setPage] = useState("Gallery"); // AQUÍ SE CAMBIA LA PÁGINA QUE APARECE DE INICIO
+    const [page, setPage] = useState("Landing"); // AQUÍ SE CAMBIA LA PÁGINA QUE APARECE DE INICIO
     const [num, setNum] = useState();
     const [slider01, setSlider01] = useState(50)
     const [slider02, setSlider02] = useState(50)
@@ -14,7 +14,7 @@ export const AppContextProvider = (props) => {
     const [salir, setSalir] = useState(false)
     const [vistas, setVistas] = useState([]);
     const [completadas, setCompletadas] = useState([]);
-    const [pixelBlastColor, setPixelBlastColor] = useState("#F374AE");
+    const [pixelBlastColor, setPixelBlastColor] = useState("#ffffffff");
     const [mosaicos, setMosaicos] = useState([{"nombre": "ZAZO",
             "fecha": "13:01 13/10/2025",
             "respuestas": [[1, 1], [0,0], [0.26, 0.26], [0.43, 0.24], [0.77, 1], [1, 0], [0.68, 0.2], [0.04, 0.24], [0.35, 0.7], [0.98, 0.75]]},
