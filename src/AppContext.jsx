@@ -14,7 +14,7 @@ export const AppContextProvider = (props) => {
     const [salir, setSalir] = useState(false)
     const [vistas, setVistas] = useState([]);
     const [completadas, setCompletadas] = useState([]);
-    const [pixelBlastColor, setPixelBlastColor] = useState("#ffffffff");
+    const [pixelBlastColor, setPixelBlastColor] = useState("#c23939");
     const [mosaicos, setMosaicos] = useState([{"nombre": "ZAZO",
             "fecha": "13:01 13/10/2025",
             "respuestas": [[1, 1], [0,0], [0.26, 0.26], [0.43, 0.24], [0.77, 1], [1, 0], [0.68, 0.2], [0.04, 0.24], [0.35, 0.7], [0.98, 0.75]]},
@@ -35,10 +35,24 @@ export const AppContextProvider = (props) => {
                     169,93,82
     ]
 
+    const coloresParaElegir = [    "#8D9A54",
+                                    "#0F2A1D",
+                                    "#590B0C",
+                                    "#A95D52"
+    ]
 
-    
+    let aleatorio = Math.floor(Math.random() * coloresParaElegir.length);
+
+    const cambiarColorPixelBlast = () => {
+        aleatorio = Math.floor(Math.random() * coloresParaElegir.length);
+        setPixelBlastColor(coloresParaElegir[aleatorio])
+    }
+
+
     useEffect(() =>{
         const estadoLocal = JSON.parse(localStorage.getItem("almacenaje"))
+
+        setPixelBlastColor(coloresParaElegir[aleatorio])
         if (estadoLocal){
             setMosaicos(estadoLocal.mosaicos)
         }
