@@ -17,10 +17,12 @@
     "@tailwindcss/vite": "^4.1.14",
     "gsap": "^3.13.0",
     "phosphor-react": "^1.4.1",
+    "postprocessing": "^6.37.8",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "styled-components": "^6.1.19",
     "tailwindcss": "^4.1.14",
+    "three": "^0.180.0",
     "unicornstudio-react": "^1.4.31"
   },
   "devDependencies": {
