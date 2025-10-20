@@ -370,8 +370,9 @@ picture,
 video,
 canvas,
 svg {
-    display: block;
-    width: 100%;
+    position: absolute;
+    top: 0;
+    transform: translateY(-20%);
 }
 
 /* 7. Inherit fonts for form controls */
