@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 export const AppContext = createContext(null);
 export const AppContextProvider = (props) => {
 
-    const [page, setPage] = useState("Gallery"); // AQUÍ SE CAMBIA LA PÁGINA QUE APARECE DE INICIO
+    const [page, setPage] = useState("Landing"); // AQUÍ SE CAMBIA LA PÁGINA QUE APARECE DE INICIO
     const [num, setNum] = useState();
     const [slider01, setSlider01] = useState(50)
     const [slider02, setSlider02] = useState(50)

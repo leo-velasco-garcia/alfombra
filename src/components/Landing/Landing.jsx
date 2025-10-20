@@ -34,7 +34,7 @@ const Landing = () => {
                 <Button content="Quiero crear!" onClick={() => setAbrir(true)} />
             </div>
 
-            <div style={{ width: '100%', height: '600px', position: 'relative'}}>
+            <div style={{ width: '100%', height: '600px', position: 'relative', zIndex: "999",}}>
                 <PixelBlast
                     variant="circle"
                     pixelSize={6}
