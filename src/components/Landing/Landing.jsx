@@ -9,7 +9,7 @@ import  PixelBlast  from '../PixelBlast/PixelBlast';
 
 
 const Landing = () => {
-    const { page, setPage, setAbrir, pixelBlastColor, setPixelBlastColor } = useContext(AppContext);
+    const { page, setPage, setAbrir, pixelBlastColor, setPixelBlastColor, cambiarColorPixelBlast } = useContext(AppContext);
     const rootRef = useRef(null)
 
     useLayoutEffect(() => {
@@ -33,7 +33,7 @@ const Landing = () => {
             <div className="buttoncontrol">
                 <Button content="Quiero crear!" onClick={() => setAbrir(true)} />
             </div>
-            <div className=""><SplitText
+            <div className="" ><SplitText
                 text="Hello, GSAP!"
                 className="text-2xl font-semibold text-center"
                 delay={100}
@@ -47,7 +47,9 @@ const Landing = () => {
                 textAlign="center"
                 onLetterAnimationComplete={handleAnimationComplete}
             /></div>
-            <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+            <div style={{ width: '100%', height: '100%', position: 'relative' }} 
+                // onClick={() => cambiarColorPixelBlast()} 
+                >
                 <PixelBlast
                     variant="square"
                     pixelSize={10}

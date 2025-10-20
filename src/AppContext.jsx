@@ -48,11 +48,15 @@ export const AppContextProvider = (props) => {
         setPixelBlastColor(coloresParaElegir[aleatorio])
     }
 
+    useEffect(() =>{
+        cambiarColorPixelBlast()
+    }, [page])
+
 
     useEffect(() =>{
         const estadoLocal = JSON.parse(localStorage.getItem("almacenaje"))
 
-        setPixelBlastColor(coloresParaElegir[aleatorio])
+        cambiarColorPixelBlast()
         if (estadoLocal){
             setMosaicos(estadoLocal.mosaicos)
         }
@@ -124,7 +128,8 @@ export const AppContextProvider = (props) => {
         mosaicos, setMosaicos,
         listaPreguntas,
         colores,
-        pixelBlastColor, setPixelBlastColor
+        pixelBlastColor, setPixelBlastColor,
+        cambiarColorPixelBlast
     };
 
     useEffect(() =>{
