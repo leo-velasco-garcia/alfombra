@@ -7,7 +7,6 @@ import { gsap } from 'gsap'
 import PixelBlast from '../PixelBlast/PixelBlast';
 
 
-
 const Landing = () => {
     const { page, setPage, setAbrir, pixelBlastColor, setPixelBlastColor } = useContext(AppContext);
     const rootRef = useRef(null)
@@ -31,13 +30,13 @@ const Landing = () => {
             <div className="buttoncontrol">
                 <Button content="Quiero crear!" onClick={() => setAbrir(true)} />
             </div>
-            <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+            <div className="pixelblast-container">
                 <PixelBlast
                     variant="square"
-                    pixelSize={5}
+                    pixelSize={10}
                     color={pixelBlastColor}
                     patternScale={1}
-                    patternDensity={1}
+                    patternDensity={1.5}
                     pixelSizeJitter={0.5}
                     enableRipples
                     rippleSpeed={0.4}
@@ -45,8 +44,8 @@ const Landing = () => {
                     rippleIntensityScale={1.5}
                     liquid
                     liquidStrength={0}
-                    liquidRadius={1.2}
-                    liquidWobbleSpeed={5}
+                    liquidRadius={0}
+                    liquidWobbleSpeed={0}
                     speed={0.6}
                     edgeFade={0.25}
                     transparent
