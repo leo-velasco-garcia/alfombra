@@ -371,8 +371,6 @@ video,
 canvas,
 svg {
     position: absolute;
-    top: 0;
-    transform: translateY(-50%);
     height: 100vh;
     /* background-color: black; */
     /* transform: scale(200%); */

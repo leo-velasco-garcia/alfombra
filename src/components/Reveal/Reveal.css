@@ -25,7 +25,10 @@
     height: 100%;
     gap: 0;
 }
+.reveal .contenedorCard .card .imgCard {
+aspect-ratio: 1;
 
+}
 .reveal .contenedorCard .placeholder {
     text-align: center;
     padding: 2rem;
