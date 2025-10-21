@@ -1,5 +1,3 @@
-
-
 .reveal {
     height: 100%;
     width: 100%;
@@ -7,10 +5,6 @@
     flex-flow: column;
     padding: 1rem;
     background-color: var(--bg);
-    background-image:
-        linear-gradient(to right, rgba(0, 0, 0, .06) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(0, 0, 0, .06) 1px, transparent 1px);
-    background-size: 24px 24px;
 }
 
 .reveal .contenedorCard {
@@ -22,13 +16,14 @@
     align-items: center;
     background: #fff;
     padding: 1rem;
-    gap: 1rem;
+    gap: 5rem;
 }
 
 .reveal .contenedorCard .card {
     max-width: min(48rem, 100%);
     width: 100%;
-    max-height: 100%;
+    height: 100%;
+    gap: 0;
 }
 
 .reveal .contenedorCard .placeholder {
@@ -36,6 +31,103 @@
     padding: 2rem;
 }
 
-.reveal .buttoncontrol {
-    align-self: center;
+
+
+.reveal .contenedorCard .descripcionCard {
+    padding-top: 0.25rem;
 }
+
+.reveal .leyendayboton {}
+
+.reveal .leyendayboton .leyendacolores {}
+
+.reveal .leyendayboton .leyendacolores .La1 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.reveal .leyendayboton .leyendacolores .La2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.reveal .leyendayboton .leyendacolores .La3 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.reveal .leyendayboton .leyendacolores .La4 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.reveal .leyendayboton .leyendacolores .La5 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.reveal .leyendayboton .leyendacolores .La6 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.reveal .leyendayboton .leyendacolores .color1 {
+    background-color: rgba(251, 225, 174, 1);
+    width: 50px;
+    height: 50px;
+}
+
+.reveal .leyendayboton .leyendacolores .color2 {
+    background-color: rgba(167, 22, 35, 1);
+    width: 50px;
+    height: 50px;
+}
+
+.reveal .leyendayboton .leyendacolores .color3 {
+    background-color: rgba(250, 250, 225, 1);
+    width: 50px;
+    height: 50px;
+}
+
+.reveal .leyendayboton .leyendacolores .color4 {
+    background-color: rgba(85, 18, 18, 1);
+    width: 50px;
+    height: 50px;
+}
+
+.reveal .leyendayboton .leyendacolores .color5 {
+    background-image: linear-gradient(45deg, rgba(251, 225, 174, 1), rgba(167, 22, 35, 1));
+    width: 50px;
+    height: 50px;
+}
+
+.reveal .leyendayboton .leyendacolores .color6 {
+    background-image: linear-gradient(45deg, rgba(250, 250, 225, 1), rgba(85, 18, 18, 1));
+    width: 50px;
+    height: 50px;
+}
+
+.reveal .leyendayboton .buttoncontrol {
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.reveal .leyendayboton .leyendacolores span {
+    font-size: 1.5rem;
+}
+
+/* * {
+    border: 1px solid red;
+} */

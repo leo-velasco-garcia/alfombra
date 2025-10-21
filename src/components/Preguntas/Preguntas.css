@@ -1,3 +1,5 @@
+
+
 .oculto{
     display: none;
 }
@@ -7,16 +9,12 @@
 .preguntas{
     height: 100%;
     width: 100%;
-    max-width: 60rem;
+    max-width: 65rem;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
     padding: 1.25rem 1rem 2rem 1rem;
     background-color: var(--bg);
-    background-image:
-        linear-gradient(to right, rgba(0,0,0,.06) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(0,0,0,.06) 1px, transparent 1px);
-    background-size: 24px 24px;
     margin: 0 auto;
 }
 
@@ -84,12 +82,14 @@
 .preguntas .botones{
     display: flex;
     flex-flow: row;
-    gap: 1rem;
+    gap: 1.5rem;
     justify-content: flex-end;
     width: 100%;
     /* border: 1px salmon solid; */
 }
-
+.preguntas .botones span{
+    padding-right: 1.2rem;
+}
 .preguntas .sliders{
     display: flex;
     flex-flow: column;

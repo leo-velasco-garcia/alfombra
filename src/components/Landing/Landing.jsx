@@ -4,7 +4,6 @@ import "./Landing.css"
 import { useContext } from 'react'
 import { AppContext } from '../../AppContext'
 import { gsap } from 'gsap'
-import SplitText from "../SplitText/SplitText";
 import  PixelBlast  from '../PixelBlast/PixelBlast';
 
 
@@ -33,20 +32,6 @@ const Landing = () => {
             <div className="buttoncontrol">
                 <Button content="Quiero crear!" onClick={() => setAbrir(true)} />
             </div>
-            <div className="" ><SplitText
-                text="Hello, GSAP!"
-                className="text-2xl font-semibold text-center"
-                delay={100}
-                duration={0.6}
-                ease="power3.out"
-                splitType="chars"
-                from={{ opacity: 0, y: 40 }}
-                to={{ opacity: 1, y: 0 }}
-                threshold={0.1}
-                rootMargin="-100px"
-                textAlign="center"
-                onLetterAnimationComplete={handleAnimationComplete}
-            /></div>
             <div style={{ width: '100%', height: '100%', position: 'relative' }} 
                 // onClick={() => cambiarColorPixelBlast()} 
                 >
