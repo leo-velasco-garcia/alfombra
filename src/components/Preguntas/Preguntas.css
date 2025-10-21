@@ -58,11 +58,10 @@
 
 .preguntas .headerPreguntas .titulo2 .cambioTipo{
     font-family: "PF Pixelscript";
-
     font-size: 5rem;
     margin-top: 1rem;
     line-height: 4rem;
-    font-weight: 900;
+    font-weight: 500;
     
     /* transform: translateY(1rem); */
     /* font-family: "PF Pixelscript"; */

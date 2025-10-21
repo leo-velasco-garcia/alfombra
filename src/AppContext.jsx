@@ -6,7 +6,7 @@ export const AppContext = createContext(null);
 export const AppContextProvider = (props) => {
 
 
-    const [page, setPage] = useState("Landing"); // AQUÍ SE CAMBIA LA PÁGINA QUE APARECE DE INICIO
+    const [page, setPage] = useState("Gallery"); // AQUÍ SE CAMBIA LA PÁGINA QUE APARECE DE INICIO
     const [num, setNum] = useState();
     const [slider01, setSlider01] = useState(50)
     const [slider02, setSlider02] = useState(50)
@@ -29,10 +29,12 @@ export const AppContextProvider = (props) => {
             "respuestas": []})
 
     const colores = [
-                    141,154,84,
-                    15, 42, 29,
-                    89,11,12,
-                    169,93,82
+                    250, 250, 225,
+                    85, 18, 18,
+                    // horizontales
+                    251, 225, 174,
+                    167, 22, 35,
+                    // verticales
     ]
 
     const coloresParaElegir = [    "#8D9A54",

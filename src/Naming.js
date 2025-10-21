@@ -1,3 +1,3 @@
-const nombre = 'Alfombra'
+const nombre = 'Bruma'
 
 export default nombre;
