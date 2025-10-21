@@ -372,6 +372,8 @@ canvas,
 svg {
     position: absolute;
     height: 100vh;
+    /* top:0; */
+
     /* background-color: black; */
     /* transform: scale(200%); */
 }

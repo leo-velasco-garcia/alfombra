@@ -34,7 +34,7 @@ const Reveal = () => {
                 )}
                 <div className="leyendayboton">
                     <div className="leyendacolores">
-                        <div className="La1">
+                        {/* <div className="La1">
                             <div className="color1"></div>
                             <span>Triste</span>
                         </div>
@@ -49,7 +49,7 @@ const Reveal = () => {
                         <div className="La4">
                             <div className="color4"></div>
                             <span>Presente</span>
-                        </div>
+                        </div> */}
                         <div className="La5">
                             <div className="color5"></div>
                             <span>Triste - Feliz</span>
@@ -60,7 +60,8 @@ const Reveal = () => {
                         </div>
                     </div>
                     <div className="buttoncontrol">
-                        <Button content="Ver los del resto de usuarios" onClick={() => setPage("Gallery")} />
+                        <Button content="Ver la galería" onClick={() => setPage("Gallery")} />
+                        <Button content="Imprimir"/>
                     </div>
                 </div>
             </div>

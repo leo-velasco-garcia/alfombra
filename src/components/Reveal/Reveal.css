@@ -125,6 +125,8 @@ aspect-ratio: 1;
 .reveal .leyendayboton .buttoncontrol {
     align-items: center;
     margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
 }
 
 .reveal .leyendayboton .leyendacolores span {

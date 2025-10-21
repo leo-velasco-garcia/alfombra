@@ -6,7 +6,7 @@ export const AppContext = createContext(null);
 export const AppContextProvider = (props) => {
 
 
-    const [page, setPage] = useState("Landing"); // AQUÍ SE CAMBIA LA PÁGINA QUE APARECE DE INICIO
+    const [page, setPage] = useState("Gallery"); // AQUÍ SE CAMBIA LA PÁGINA QUE APARECE DE INICIO
     const [num, setNum] = useState();
     const [slider01, setSlider01] = useState(50)
     const [slider02, setSlider02] = useState(50)
@@ -29,18 +29,18 @@ export const AppContextProvider = (props) => {
             "respuestas": []})
 
     const colores = [
-                    250, 250, 225,
-                    85, 18, 18,
+                    215, 255, 167,
+                    10, 64, 30,
                     // horizontales
-                    251, 225, 174,
-                    167, 22, 35,
+                    159, 41, 26,
+                    243, 200, 135,
                     // verticales
     ]
 
-    const coloresParaElegir = [    "#8D9A54",
-                                    "#0F2A1D",
-                                    "#590B0C",
-                                    "#A95D52"
+    const coloresParaElegir = [    "rgba(215, 255, 167, 1)",
+                                    "rgba(10, 64, 30, 1)",
+                                    "rgba(159, 41, 26, 1)",
+                                    "rgba(243, 200, 135, 1)"
     ]
 
     let aleatorio = Math.floor(Math.random() * coloresParaElegir.length);

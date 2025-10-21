@@ -29,6 +29,17 @@
     /* padding: 1rem; */
 }
 
+.preguntas .headerPreguntas button{
+    width: fit-content;
+    justify-self: end;
+}
+.preguntas .headerPreguntas .whatever{
+    display: flex;
+    justify-content: flex-end;
+}
+.preguntas .headerPreguntas .whatever button{
+    padding: 0;
+}
 .preguntas .headerPreguntas{
     /* background-color: aquamarine; */
     display: flex;
