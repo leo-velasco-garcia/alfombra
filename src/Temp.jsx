@@ -36,7 +36,7 @@ const Temp = () => {
 
     const reiniciarTemporizador = () => {
         timerRef.current? clearTimeout(timerRef.current): null;
-        warningRef.current? clearTimeout(timerRef.current): null;
+        warningRef.current? clearTimeout(warningRef.current): null;
 
         timerRef.current = setTimeout(() => {
             page !== "Landing" ? reiniciar() : null;
