@@ -51,7 +51,7 @@ const Landing = () => {
                     liquidRadius={0}
                     liquidWobbleSpeed={5}
                     speed={0.6}
-                    edgeFade={0.25}
+                    edgeFade={0.0}
                     transparent
                 />
             </div>
