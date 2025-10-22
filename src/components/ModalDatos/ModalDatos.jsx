@@ -39,7 +39,7 @@ const ModalDatos = () => {
         let fechaEscrita = hora + ":" + min + " " + dia + "/" + month + "/" + anio;
         // console.log(fechaEscrita)
         newProv.fecha = fechaEscrita
-        console.log(newProv)
+        // console.log(newProv)
         setProv(newProv)
 
         if (document.querySelector("#inputNombre").value == "") {

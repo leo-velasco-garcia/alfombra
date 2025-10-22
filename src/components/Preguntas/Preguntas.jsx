@@ -118,15 +118,15 @@ const Preguntas = () => {
 
 
 
-    useEffect(() => {
-        console.log(prov)
-    }, [prov]
-    )
+    // useEffect(() => {
+    //     console.log(prov)
+    // }, [prov]
+    // )
 
-    useEffect(() => {
-        console.log(mosaicos)
-    }, [mosaicos]
-    )
+    // useEffect(() => {
+    //     console.log(mosaicos)
+    // }, [mosaicos]
+    // )
 
 
 

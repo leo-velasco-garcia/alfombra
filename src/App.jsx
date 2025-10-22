@@ -8,6 +8,7 @@ import ModalDatos from './components/ModalDatos/ModalDatos'
 import ModalSalir from './components/ModalSalir/ModalSalir'
 import { AppContext } from './AppContext'
 import Reveal from './components/Reveal/Reveal'
+import ModalInactividad from './components/ModalInactividad/ModalInactividad'
 
 // console.log(styles)
 
@@ -20,6 +21,7 @@ const App = () => {
   return (
     <div className="wrapper">
       <ModalDatos />
+      <ModalInactividad />
       <ModalSalir />
       <Header />
       <div className="colocador">
