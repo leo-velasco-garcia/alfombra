@@ -26,10 +26,10 @@ const Galeria = () => {
                 
                 {mosaicos.length > 0 ? 
                 mosaicos.map((mosaico, i) => <Card nombre={mosaico.nombre} fecha={mosaico.fecha} respuestas={mosaico.respuestas} key={i}/>) :
-                <span>Todavía no hay mosaicos</span>}
+                <span>Todavía no hay muestras</span>}
             </div>
             <div className="buttoncontrol">
-                <Button content="Quiero crear!" onClick={() => setAbrir(true)}/>
+                <Button content="¡Quiero crear!" onClick={() => setAbrir(true)}/>
             </div>
         </section>
     )

@@ -28,7 +28,7 @@ const Reveal = () => {
                     <Card nombre={mosaicos[0].nombre} fecha={mosaicos[0].fecha} respuestas={mosaicos[0].respuestas} />
                 ) : (
                     <div className="placeholder">
-                        <p className="small-caps">Aún no hay alfombra para mostrar</p>
+                        <p className="small-caps">Aún no hay ninguna muestra que ver</p>
                         <Button content="Crear la primera" onClick={() => setPage("Preguntas")} />
                     </div>
                 )}

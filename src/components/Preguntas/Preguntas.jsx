@@ -171,8 +171,8 @@ const Preguntas = () => {
                 </div>
             </div>
             <div className="botones">
-                                <span>{completadas.length} pregunta{completadas.length !== 1 ? "s" : ""} completada{completadas.length !== 1 ? "s" : ""}. {completadas.length < 8 ? "Necesitas al menos " + (8 - completadas.length) + " más para crear una alfombra" : " Puedes crear la alfombra cuando quieras."}</span>
-                {completadas.length >= 8 ? <Button content="Crear alfombra" color='#a9cce900' onClick={() => guardarProv()} /> : null}
+                                <span>{completadas.length} pregunta{completadas.length !== 1 ? "s" : ""} completada{completadas.length !== 1 ? "s" : ""}. {completadas.length < 8 ? "Necesitas al menos " + (8 - completadas.length) + " más para crear una muestra" : " Puedes crear la muestra cuando quieras."}</span>
+                {completadas.length >= 8 ? <Button content="Crear muestra" color='#a9cce900' onClick={() => guardarProv()} /> : null}
                 <Button content="Siguiente pregunta" color='#8D9A54' onClick={() => siguientePregunta(listaPreguntas, "guardar")} />
             </div>
         </section>

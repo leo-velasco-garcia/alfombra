@@ -30,7 +30,7 @@ const Landing = () => {
     return (
         <section ref={rootRef} className={page == "Landing" ? "landing" : "oculto"}>
             <div className="buttoncontrol">
-                <Button content="Quiero crear!" onClick={() => setAbrir(true)} />
+                <Button content="¡Quiero crear!" onClick={() => setAbrir(true)} />
             </div>
             <div style={{ width: '100%', height: '100%', position: 'relative' }} 
                 // onClick={() => cambiarColorPixelBlast()} 
