@@ -375,13 +375,22 @@ a:hover {
 img,
 picture,
 video,
-canvas,
-svg {
-    position: absolute;
-    height: 100vh;
-    /* top:0; */
+canvas{
+    position: relative;
+    height: 100%;
+    top:0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
 
-    /* background-color: black; */
+svg {
+    position: relative;
+    height: 100%;
+    top:0 ;
+    border: 1px solid red;
+    background-color: rgb(190, 100, 100);
     /* transform: scale(200%); */
 }
 

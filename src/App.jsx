@@ -8,6 +8,7 @@ import ModalDatos from './components/ModalDatos/ModalDatos'
 import ModalSalir from './components/ModalSalir/ModalSalir'
 import { AppContext } from './AppContext'
 import Reveal from './components/Reveal/Reveal'
+import About from './components/About/About'
 import ModalInactividad from './components/ModalInactividad/ModalInactividad'
 
 // console.log(styles)
@@ -29,6 +30,7 @@ const App = () => {
         <Landing />
         <Preguntas />
         <Reveal />
+        <About/>
       </div>
     </div>
   )

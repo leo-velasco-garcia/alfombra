@@ -30,14 +30,14 @@
 
 .ModalDatos .ModalDatosContent form input{
     padding: .5rem;
-    border: var(--border-thick) solid var(--ink);
+    border: var(--border-thick) solid #969696;
 }
 
 .ModalDatos .ModalDatosContent form input:focus{
     border: none;
     box-shadow: none;
     outline: none;
-    border: 1px solid black;
+    border: 2px solid var(--ink);
     /* background-color: red; */
 }
 
