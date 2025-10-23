@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: var(--border-thick) solid var(--ink);
-    background-image: url("../public/fondo3.jpg");
+    /* background-image: url("../public/fondo3.jpg"); */
     background-size:cover;
 }
 @font-face {
