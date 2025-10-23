@@ -3,6 +3,10 @@
     *{
         display: none;
     }
+
+    .reveal {
+        display: flex;
+    }    
     
 }
 

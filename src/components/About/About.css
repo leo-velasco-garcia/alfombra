@@ -49,3 +49,13 @@
     font-style: italic;
 }
 
+.sectionAbout .texto .explicacion{
+    display: grid;
+    gap: 1rem;
+}
+
+.sectionAbout .texto .explicacio
+.sectionAbout .texto .explicacion img{
+    width: 100%;
+}
+
