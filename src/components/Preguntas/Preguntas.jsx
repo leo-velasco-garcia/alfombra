@@ -146,15 +146,15 @@ const Preguntas = () => {
     return (
         <section ref={rootRef} className={page == "Preguntas" ? "preguntas" : "oculto"}>
             <div className="colocador">
-                
+                <div className="whatever">
+                    <Button content="Saltar pregunta" color='rgba(255, 255, 255, 0)' onClick={() => siguientePregunta(listaPreguntas, "a")} border='#00000000' />
+                </div>
             </div>
             
             <div className="headerPreguntas">
                 <h2 className="titulo2"><span className='cambioTipo'>Recuerda</span>...</h2>
                 <p className='parrafo'>{"..." + listaPreguntas[num] + "."}</p>
-                <div className="whatever">
-                    <Button content="Saltar pregunta" color='rgba(255, 255, 255, 0)' onClick={() => siguientePregunta(listaPreguntas, "a")} border='#00000000' />
-                </div>
+                
                 
             </div>
             

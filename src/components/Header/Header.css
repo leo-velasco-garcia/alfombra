@@ -24,7 +24,7 @@
 .header .n{ color: var(--ink); }
 
 .header .titulo:hover{
-    color: var(--accent-orange);
+    color: var(--beige);
 }
 
 .header .enlaces { display: flex; gap: 0.5rem; }
@@ -37,6 +37,6 @@
     border: var(--border-thick) solid transparent;
 }
 
-.header .enlaces .enlace:hover{ color: var(--accent-green); }
+.header .enlaces .enlace:hover{ color: var(--dark-red); }
 
 .header .enlaces .enlaceseleccionado{ border-color: var(--ink); }

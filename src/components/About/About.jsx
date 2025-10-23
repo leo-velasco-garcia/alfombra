@@ -65,12 +65,14 @@ const About = () => {
                                         backgroundColor: "rgb(0, 50, 15)",
                                     }}
                                 >
-                                    <p style={{ fontWeight: 500, fontSize: "2rem", color: "#ffffff" }}>Hilos Verticales</p>
+                                    <img src="../public/pruebaHilos.jpg" alt="" 
+                                    style={{width: "100%", height: "100%", objectFit: "cover" }}/>
+                                    {/* <p style={{ fontWeight: 500, fontSize: "2rem", color: "#ffffff" }}>Hilos Verticales</p> */}
                                 </div>
                             }
                             gridSize={12}
                             pixelColor='#ffffff'
-                            animationStepDuration={0.2}
+                            animationStepDuration={0.4}
                             className="custom-pixel-card"
                         />
                         <p>
@@ -98,7 +100,8 @@ const About = () => {
                                         backgroundColor: "rgb(159, 41, 26)",
                                     }}
                                 >
-                                    <p style={{ fontWeight: 500, fontSize: "2rem", color: "#ffffff" }}>Hilos Horizontales</p>
+                                    
+                                    {/* <p style={{ fontWeight: 500, fontSize: "2rem", color: "#ffffff" }}>Hilos Horizontales</p> */}
                                 </div>
                             }
                             gridSize={12}
