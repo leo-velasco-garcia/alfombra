@@ -382,7 +382,7 @@ canvas{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    /* background-color: black; */
 }
 
 svg {
@@ -390,7 +390,7 @@ svg {
     height: 100%;
     top:0 ;
     border: 1px solid red;
-    background-color: rgb(190, 100, 100);
+    /* background-color: rgb(190, 100, 100); */
     /* transform: scale(200%); */
 }
 

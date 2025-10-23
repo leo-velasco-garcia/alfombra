@@ -6,7 +6,7 @@ export const AppContext = createContext(null);
 export const AppContextProvider = (props) => {
 
 
-    const [page, setPage] = useState("Landing"); // AQUÍ SE CAMBIA LA PÁGINA QUE APARECE DE INICIO
+    const [page, setPage] = useState("Reveal"); // AQUÍ SE CAMBIA LA PÁGINA QUE APARECE DE INICIO
     const [num, setNum] = useState();
     const [slider01, setSlider01] = useState(50)
     const [slider02, setSlider02] = useState(50)
@@ -15,7 +15,7 @@ export const AppContextProvider = (props) => {
     const [inactividad, setInactividad] = useState(false)
     const [vistas, setVistas] = useState([]);
     const [completadas, setCompletadas] = useState([]);
-    const [pixelBlastColor, setPixelBlastColor] = useState("#c23939");
+    const [pixelBlastColor, setPixelBlastColor] = useState();
     const [mosaicos, setMosaicos] = useState([{
         "nombre": "ZAZO",
         "fecha": "13:01 13/10/2025",
@@ -38,18 +38,18 @@ export const AppContextProvider = (props) => {
     })
 
     const colores = [
-        215, 255, 167,
-        10, 64, 30,
+        211, 211, 211, //verde claro
+        0, 50, 15, //verde oscuro
         // horizontales
-        159, 41, 26,
-        243, 200, 135,
+        159, 41, 26, //// rojo oscuro
+        241, 181, 91, ///beige
         // verticales
     ]
 
-    const coloresParaElegir = ["rgba(150, 205, 101, 1)",
-        "rgba(10, 64, 30, 1)",
-        "rgba(159, 41, 26, 1)",
-        "rgba(243, 200, 135, 1)"
+    const coloresParaElegir = ["rgb(211, 211, 211)",
+        "rgba(3, 75, 25, 1)",
+        "rgb(159, 41, 26)",
+        "rgb(241, 181, 91)"
     ]
 
 

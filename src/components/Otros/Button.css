@@ -8,7 +8,7 @@
     letter-spacing: 0.02em;
 }
 
-.Button:hover{ transform: translate(-1px, -1px);} 
+.Button:hover{ transform: scale(102%);} 
 
 /* Accent variants via data attributes */
 .Button[data-variant="orange"]{ background: var(--accent-orange); color: #fff; }

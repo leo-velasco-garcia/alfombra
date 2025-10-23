@@ -3,7 +3,7 @@
     width: 100%;
     display: flex;
     flex-flow: column;
-    background: var(--bg);
+    /* background: var(--bg); */
 }
 
 .galeria .headerGaleria{
@@ -27,7 +27,7 @@
     overflow-y: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    background-color: var(--bg);
+    /* background-color: var(--bg); */
 }
 
 .galeria .buttoncontrol{

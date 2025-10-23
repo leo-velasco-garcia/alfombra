@@ -12,7 +12,7 @@ const Header = () => {
             <a href="#"  className={page == "Landing"? "titulo s" : "titulo n"} onClick={() => setPage("Landing")}>{nombre}</a>
             <div className="enlaces">
                 {page !== "Preguntas" ? <a href="#"  className={page == "Gallery"? "enlace enlaceseleccionado" : "enlace"} onClick={() => page !== "Preguntas" ? setPage("Gallery"):null }>Galería</a>: null}
-                {page !== "Preguntas" ? <a href="#"  className={page == "About"? "enlace enlaceseleccionado" : "enlace"} onClick={() => page !== "Preguntas" ? setPage("About"):null}>Sobre el proyecto</a>: null}
+                {page !== "Preguntas" ? <a href="#"  className={page == "About"? "enlace enlaceseleccionado" : "enlace"} onClick={() => page !== "Preguntas" ? setPage("About"):null}>Cómo funciona</a>: null}
                 {page == "Preguntas" ? <a href="#"  className={"enlace"} onClick={() => setSalir(true)}>Salir</a>: null}
             </div>
         </header>

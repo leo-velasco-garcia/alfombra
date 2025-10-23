@@ -3,8 +3,11 @@
     position: relative;
     width: 100%;
     /* height: calc(); */
-    padding: 1rem;
+    padding: 2rem 2rem;
     max-width: 65rem;
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
     /* background-color: red   ; */
 }
 
@@ -23,9 +26,19 @@
 
 .sectionAbout .tituloAbout{
     font-size: 3rem;
+    line-height: 3.5rem;
 }
+
+@media only screen and (max-width: 750px) {
+    .sectionAbout .tituloAbout{
+        width: 100%;
+        text-align: center;
+    }
+}
+
 .sectionAbout .tituloAbout .naming{
     font-family: "PF Pixelscript";
+    font-size: 3.3rem;
 }
 .sectionAbout .texto{
     display: flex;

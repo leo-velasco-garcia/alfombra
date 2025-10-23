@@ -21,12 +21,12 @@
 
 .reveal .contenedorCard .card {
     max-width: min(48rem, 100%);
-    width: 100%;
+    width: fit-content;
     height: 100%;
     gap: 0;
 }
 .reveal .contenedorCard .card .imgCard {
-aspect-ratio: 1;
+    aspect-ratio: 1;
 
 }
 .reveal .contenedorCard .placeholder {
@@ -40,10 +40,20 @@ aspect-ratio: 1;
     padding-top: 0.25rem;
 }
 
-.reveal .leyendayboton {}
+.reveal .leyendayboton {
+    display: flex; 
+    height: 100%;
+}
 
-.reveal .leyendayboton .leyendacolores {}
+.reveal .leyendayboton .leyendacolores {
+    /* border: 1px springgreen solid; */
+    height: 100%;
+    display: flex;
+    gap: 1rem;
 
+}
+
+/* 
 .reveal .leyendayboton .leyendacolores .La1 {
     display: flex;
     align-items: center;
@@ -70,22 +80,26 @@ aspect-ratio: 1;
     align-items: center;
     gap: 0.5rem;
     margin-top: 1rem;
-}
+} */
 
 .reveal .leyendayboton .leyendacolores .La5 {
     display: flex;
+    flex-flow: column;
     align-items: center;
+    height: 100%;
     gap: 0.5rem;
-    margin-top: 1rem;
+    /* border: 1px solid salmon; */
 }
 
 .reveal .leyendayboton .leyendacolores .La6 {
     display: flex;
+    flex-flow: column;
     align-items: center;
+    height: 100%;
     gap: 0.5rem;
-    margin-top: 1rem;
+    /* border: 1px solid salmon; */
 }
-
+/* 
 .reveal .leyendayboton .leyendacolores .color1 {
     background-color: rgba(251, 225, 174, 1);
     width: 50px;
@@ -108,18 +122,21 @@ aspect-ratio: 1;
     background-color: rgba(85, 18, 18, 1);
     width: 50px;
     height: 50px;
-}
+} */
 
 .reveal .leyendayboton .leyendacolores .color5 {
-    background-image: linear-gradient(45deg, rgba(251, 225, 174, 1), rgba(167, 22, 35, 1));
+    background-image: linear-gradient(45deg, rgba(241, 181, 91, 1),  rgba(159, 41, 26, 1));
+    border: var(--border-thick) solid var(--ink);
     width: 50px;
-    height: 50px;
+    height: 100%;
 }
 
+
 .reveal .leyendayboton .leyendacolores .color6 {
-    background-image: linear-gradient(45deg, rgba(250, 250, 225, 1), rgba(85, 18, 18, 1));
+    background-image: linear-gradient(45deg, rgba(211, 211, 211, 1), rgba(0, 50, 15, 1));
+    border: var(--border-thick) solid var(--ink);
     width: 50px;
-    height: 50px;
+    height: 100%;
 }
 
 .reveal .leyendayboton .buttoncontrol {

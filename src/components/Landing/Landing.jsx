@@ -7,6 +7,7 @@ import { gsap } from 'gsap'
 import  PixelBlast  from '../PixelBlast/PixelBlast';
 
 
+
 const Landing = () => {
     const { page, setPage, setAbrir, pixelBlastColor, setPixelBlastColor, cambiarColorPixelBlast } = useContext(AppContext);
     const rootRef = useRef(null)

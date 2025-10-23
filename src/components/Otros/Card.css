@@ -3,7 +3,7 @@
     flex-flow: column;
     gap: 0.5rem;
     border: var(--border-thick) solid var(--ink);
-    background: #fff;
+    /* background: #fff; */
     max-height: calc(100vh - 10rem);
 }
 
