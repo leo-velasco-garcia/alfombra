@@ -1,16 +1,28 @@
-import React, { useLayoutEffect, useRef } from 'react'
+import React, { useLayoutEffect, useRef, useState, useEffect } from 'react'
 import Button from '../Otros/Button'
 import "./Landing.css"
 import { useContext } from 'react'
 import { AppContext } from '../../AppContext'
 import { gsap } from 'gsap'
-import  PixelBlast  from '../PixelBlast/PixelBlast';
+import PixelBlast from '../PixelBlast/PixelBlast';
+import TextPressure from '../TextPressure/TextPressure';
+import '../TextPressure/TextPressure.css';
 
 
 
 const Landing = () => {
     const { page, setPage, setAbrir, pixelBlastColor, setPixelBlastColor, cambiarColorPixelBlast } = useContext(AppContext);
     const rootRef = useRef(null)
+    const [isMobile, setIsMobile] = useState(false)
+
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth <= 768)
+        }
+        checkMobile()
+        window.addEventListener('resize', checkMobile)
+        return () => window.removeEventListener('resize', checkMobile)
+    }, [])
 
     useLayoutEffect(() => {
         if (page !== 'Landing') return;
@@ -33,16 +45,16 @@ const Landing = () => {
             <div className="buttoncontrol">
                 <Button content="¡Quiero crear!" onClick={() => setAbrir(true)} />
             </div>
-            <div style={{ width: '100%', height: '100%', position: 'relative' }} 
-                // onClick={() => cambiarColorPixelBlast()} 
-                >
+            <div style={{ width: '100%', height: '100%', position: 'relative' }}
+            // onClick={() => cambiarColorPixelBlast()} 
+            >
                 <PixelBlast
                     variant="square"
                     pixelSize={10}
                     color={pixelBlastColor}
-                    patternScale={1}
-                    patternDensity={1.2}
-                    pixelSizeJitter={0.5}
+                    patternScale={2}
+                    patternDensity={0.7}
+                    pixelSizeJitter={0.7}
                     enableRipples
                     rippleSpeed={0.4}
                     rippleThickness={0.12}
@@ -55,6 +67,21 @@ const Landing = () => {
                     edgeFade={0.0}
                     transparent
                 />
+                <div className="text-pressure-container">
+                    <TextPressure
+                        text="Bruma"
+                        fontFamily="PF Pixelscript"
+                        flex={true}
+                        alpha={false} //animacion de opacidad//
+                        stroke={false}
+                        width={true}
+                        weight={true}
+                        italic={true}
+                        textColor="#000000"
+                        strokeColor="#ff0000"
+                        minFontSize={isMobile ? 32 : 48}
+                    />
+                </div>
             </div>
         </section>
     )

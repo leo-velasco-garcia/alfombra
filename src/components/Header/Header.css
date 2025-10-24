@@ -24,7 +24,7 @@
 .header .n{ color: var(--ink); }
 
 .header .titulo:hover{
-    color: var(--beige);
+    color: var(--dark-red);
 }
 
 .header .enlaces { display: flex; gap: 0.5rem; }

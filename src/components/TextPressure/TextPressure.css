@@ -1,0 +1,35 @@
+.text-pressure-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    width: 50%;
+    height: auto;
+    pointer-events: none;
+}
+
+.text-pressure-container h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.text-pressure-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .text-pressure-container {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-pressure-container {
+        padding: 0 0.5rem;
+    }
+}
+
+
