@@ -30,7 +30,7 @@
 .header .enlaces { display: flex; gap: 0.5rem; }
 
 .header .enlaces .enlace{
-    color: var(--ink);
+    /* color: var(--ink); */
     text-decoration: none;
     transition: 120ms ease-in-out;
     padding: 0.25rem 0.5rem;
@@ -38,8 +38,28 @@
     font-family: "Fracktif"
 }
 
-.header .enlaces .enlace:hover{ 
-    opacity: 10%;
+.header .enlaces .rojo:hover{
+    color: #9f291a;
+}
+
+.header .enlaces .enlaceseleccionado.rojo:hover{
+    border: var(--border-thick) solid #9f291a;
+}
+
+.header .enlaces .beige:hover{
+    color: #f1b55b;
+}
+
+.header .enlaces .enlaceseleccionado.beige:hover{
+    border: var(--border-thick) solid #f1b55b;
+}
+
+.header .enlaces .verde:hover{
+    color: #076122;
+}
+
+.header .enlaces .enlaceseleccionado.verde:hover{
+    border: var(--border-thick) solid #076122;
 }
 
 .header .enlaces .enlaceseleccionado{ border-color: var(--ink); }
