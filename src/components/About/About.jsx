@@ -52,9 +52,9 @@ const About = () => {
                         <PixelTransition
                             firstContent={
                                 <img
-                                    src="../public/imgAboutVerde.svg"
+                                    src="../imgAboutVerde.svg"
                                     alt="default pixel transition content, a cat!"
-                                    style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                                    style={{ width: "100%", height: "100%", objectFit: "cover"}}
                                 />
                             }
                             secondContent={
@@ -67,7 +67,7 @@ const About = () => {
                                         backgroundColor: "rgb(0, 50, 15)",
                                     }}
                                 >
-                                    <img src="../public/pruebaHilos.jpg" alt=""
+                                    <img src="../pruebaHilos.jpg" alt=""
                                         style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                                     {/* <p style={{ fontWeight: 500, fontSize: "2rem", color: "#ffffff" }}>Hilos Verticales</p> */}
                                 </div>
@@ -87,7 +87,7 @@ const About = () => {
                         <PixelTransition
                             firstContent={
                                 <img
-                                    src="../public/imgAboutRoja.svg"
+                                    src="../imgAboutRoja.svg"
                                     alt="default pixel transition content, a cat!"
                                     style={{ width: "100%", height: "100%", objectFit: "cover" }}
                                 />
@@ -102,7 +102,7 @@ const About = () => {
                                         backgroundColor: "rgb(159, 41, 26)",
                                     }}
                                 >
-                                    <img src="../public/pruebaHilosRojos.jpg" alt=""
+                                    <img src="../pruebaHilosRojos.jpg" alt=""
                                         style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                                     {/* <p style={{ fontWeight: 500, fontSize: "2rem", color: "#ffffff" }}>Hilos Verticales</p> */}
                                 </div>
@@ -122,7 +122,7 @@ const About = () => {
                     <PixelTransition
                             firstContent={
                                 <img
-                                    src="../public/comboCuadrados.jpg"
+                                    src="../comboCuadrados.jpg"
                                     alt="default pixel transition content, a cat!"
                                     style={{ width: "100%", height: "100%", objectFit: "cover" }}
                                 />
@@ -137,7 +137,7 @@ const About = () => {
                                         backgroundColor: "rgb(159, 41, 26)",
                                     }}
                                 >
-                                    <img src="../public/combo.jpg" alt=""
+                                    <img src="../combo.jpg" alt=""
                                         style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                                     {/* <p style={{ fontWeight: 500, fontSize: "2rem", color: "#ffffff" }}>Hilos Verticales</p> */}
                                 </div>
@@ -152,16 +152,17 @@ const About = () => {
                         </p>
                         
                 </div>
-                <div className="mockups">
-                    <div className="twomock"><img src="../public/Mockup_T-01-1-1-1 72dpi.jpg" alt="" />
-                    <img src="../public/Mockup_T-01-2 72dpi.jpg" alt="" />
-                    </div>
-                    <img src="../public/Mockup_T-01-1-1-3 72dpi.jpg" alt="" />
+                
+            </div>
+            <div className="mockups">
+                    <h3 className="titulomockups">¿Qué puedes conseguir?</h3>
+                    <img src="../Mockup_T-01-1-1-1 72dpi.jpg" alt="" />
+                    <img src="../Mockup_T-01-2 72dpi.jpg" alt="" />
+                    <img src="../Mockup_T-01-1-1-3 72dpi.jpg" alt="" />
                 </div>
                 <div className="buttoncontrol">
                     <Button content="¡Quiero crear!" onClick={() => setAbrir(true)} />
                 </div>
-            </div>
         </div>
     );
 };

@@ -1,4 +1,4 @@
-*{border: 1px solid red;}
+/* *{border: 1px solid red;} */
 
 .sectionAbout {
     top: 0;
@@ -17,7 +17,7 @@
     -ms-overflow-style: none;
 
 }
-.seccionAbout .inicioseccion {
+.sectionAbout .inicioseccion {
     padding-top: 10rem;
     margin-top: -10rem;
 }
@@ -34,22 +34,6 @@
 
 }
 
-.seccionAbout .mockups {
-  
-}
-
-.seccionAbout .mockups .twomock {
-    display: flex;
-    width: 100%;
-}
-.seccionAbout .mockups img {
-max-width: 800px;  /* o el tamaño máximo visible que quieras */
-  max-height: 600px;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
 
 @media only screen and (max-width: 750px) {
     .sectionAbout .explicacion {
@@ -62,13 +46,16 @@ max-width: 800px;  /* o el tamaño máximo visible que quieras */
     display: flex;
     flex-flow: column;
     align-items: center;
+    text-align: center;
     gap: 1rem;
+    /* border: 1px solid red; */
 }
 
 .sectionAbout .hiloscombinados {
     display: flex;
     flex-flow: column;
-    /* align-items: center; */
+    align-items: center;
+    text-align: center;
     gap: 1rem;
 }
 
@@ -78,9 +65,30 @@ max-width: 800px;  /* o el tamaño máximo visible que quieras */
     gap: 1rem;
 }
 
-.sectionAbout .explicacion .cadaexplicacion .imgAbout {
-    width: 100%;
+
+.sectionAbout .mockups {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px solid black;
 }
+.sectionAbout .mockups .titulomockups{
+    font-family: "Fracktif";
+    font-size: 2rem;
+    /* font-weight: 500; */
+}
+.sectionAbout .mockups img {
+/* max-width: 800px;  /* o el tamaño máximo visible que quieras */
+  /* max-height: 600px; */
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* border: 2px solid black; */
+}
+
 
 .sectionAbout .buttoncontrol {
     justify-content: center;
