@@ -194,7 +194,6 @@ const TextPressure = ({
         style={{
           fontFamily,
           // textTransform: 'uppercase',
-          fontSize: fontSize,
           lineHeight,
           transform: `scale(1, ${scaleY})`,
           transformOrigin: 'center top',

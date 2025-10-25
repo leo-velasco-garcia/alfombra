@@ -1,9 +1,10 @@
-.text-pressure-container {
-}
+
 
 .text-pressure-container h1 {
     width: 100%;
     text-align: center;
+    font-size: 10rem;   
+    /*–––––––––––––––––––––––––––AQUÍ SE CAMBIA EL TAMAÑO---------------------------------------*/
 }
 
 .text-pressure-wrapper {
