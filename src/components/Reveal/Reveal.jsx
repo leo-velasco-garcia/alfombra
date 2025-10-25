@@ -50,15 +50,15 @@ const Reveal = () => {
                             <div className="color4"></div>
                             <span>Presente</span>
                         </div> */}
-                        <div className="La5">
-                            <span className='texto'>Triste</span>
+                        <div className="unaLeyenda">
+                            <span className='texto textoizq'>Feliz</span>
                             <div className="color5"></div>
-                            <span className='texto'>Feliz</span>
+                            <span className='texto'>Triste</span>
                         </div>
-                        <div className="La6">
-                            <span className='texto'>Presente</span>
+                        <div className="unaLeyenda">
+                            <span className='texto textoizq'>Pasado</span>
                             <div className="color6"></div>
-                            <span className='texto'>Pasado</span>
+                            <span className='texto'>Presente</span>
                         </div>
                     </div>
                     <div className="buttoncontrol">
