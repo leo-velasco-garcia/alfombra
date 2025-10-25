@@ -34,8 +34,8 @@ const ModalSalir = () => {
             <div className="ModalDatosContent">
                 <h2 className="titulo2">¿Estás seguro que no quieres terminar tu obra?</h2>
                 <div className="buttoncontrol">
-                    <Button content="No, quiero seguir creando" color='#ffffffff' type="simpleQuery" onClick={() => setSalir(false)} />
-                    <Button content="Sí, quiero salir" color='#ff4646ff' type="simpleQuery" onClick={() => limpiaYVuelve()} />
+                    <Button className="negacion" content="No, quiero seguir creando" color='#ffffffff' border= '#ffffffff' type="simpleQuery" onClick={() => setSalir(false)} />
+                    <Button className="afirmacion" content="Sí, quiero salir" color='var(--light-red)' type="simpleQuery" onClick={() => limpiaYVuelve()} />
                 </div>
             </div>
         </div>

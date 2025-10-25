@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     overflow-y: hidden;
-    /* background-image: url("../public/fondo3.jpg"); */
+    background-image: url("../Fondo_Textura_BajaCalidad.jpg");
     background-size:cover;
 }
 

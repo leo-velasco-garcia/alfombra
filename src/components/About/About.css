@@ -17,7 +17,10 @@
     -ms-overflow-style: none;
 
 }
-
+.seccionAbout .inicioseccion {
+    padding-top: 10rem;
+    margin-top: -10rem;
+}
 .oculto {
     display: none;
 }

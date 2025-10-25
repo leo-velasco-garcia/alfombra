@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: var(--border-thick) solid var(--ink);
-    /* background-image: url("../public/fondo3.jpg"); */
+    background-image: url("../Fondo_Textura_BajaCalidad.jpg");
     background-size:cover;
 }
 @font-face {
@@ -24,7 +24,7 @@
 .header .n{ color: var(--ink); }
 
 .header .titulo:hover{
-    color: var(--dark-red);
+    opacity: 10%;
 }
 
 .header .enlaces { display: flex; gap: 0.5rem; }
@@ -35,10 +35,11 @@
     transition: 120ms ease-in-out;
     padding: 0.25rem 0.5rem;
     border: var(--border-thick) solid transparent;
-    
     font-family: "Fracktif"
 }
 
-.header .enlaces .enlace:hover{ color: var(--dark-red); }
+.header .enlaces .enlace:hover{ 
+    opacity: 10%;
+}
 
 .header .enlaces .enlaceseleccionado{ border-color: var(--ink); }

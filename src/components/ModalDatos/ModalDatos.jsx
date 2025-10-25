@@ -65,7 +65,7 @@ const ModalDatos = () => {
                     <input type="text" placeholder='Nombre' id='inputNombre' />
                     <span className="hidden" id='mensajeError'>¿No has escrito nada? Necesitas al menos un pseudónimo.</span>
                     <div className="buttoncontrol">
-                        <Button content="Empezar mi muestra" color='var(--beige)' type="simpleQuery" onClick={() => loquepasa()} />
+                        <Button content="Empezar mi muestra" color='var(--light-green)' type="simpleQuery" onClick={() => loquepasa()} />
                     </div>
                 </form>
             </div>

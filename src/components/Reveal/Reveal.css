@@ -1,3 +1,7 @@
+* {
+    border: 1px solid red  ;
+}
+
 .reveal {
     height: 100%;
     width: 100%;

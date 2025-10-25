@@ -187,6 +187,8 @@ body {
     --light-green: rgb(211, 211, 211);
     --beige: rgb(241, 181, 91);
     --dark-red: rgb(159, 41, 26);
+    --light-red: #e63922;
+    --light-green: #5DA868;
 }
 
 html,

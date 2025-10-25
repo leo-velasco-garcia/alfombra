@@ -30,9 +30,11 @@ const About = () => {
             ref={rootRef}
             className={page === "About" ? "sectionAbout" : "oculto"}
         >
+            <div id="inicioseccion">
             <h2 className="tituloAbout">
                 ¿Cómo funciona <span className="naming">Bruma</span>?
             </h2>
+            </div>
             <div className="texto">
                 <p className='texto'>
                     Tejidos de la forma en que podría haber zurcido tu abuela un pantalón,
@@ -76,7 +78,7 @@ const About = () => {
                             className="custom-pixel-card"
                         />
                         <p className='texto'>
-                            Los hilos verticales se vuelven más verdes cuanto más reciente sea
+                            Los hilos verticales se tiñen de un verde más intenso cuanto más reciente sea
                             tu recuerdo.
                         </p>
                     </div>
@@ -111,8 +113,8 @@ const About = () => {
                             className="custom-pixel-card"
                         />
                         <p className='texto'>
-                            Los hilos horizontales se acercan al amarillo si el recuerdo es
-                            feliz, o al rojo si es triste.
+                            Si tu recuerdo es más alegre, los hilos horizontales toman un tono más amarillo.
+                            Mientras que los recuerdos más tristes se acercan a un rojo oscuro.
                         </p>
                     </div>
                 </div>
