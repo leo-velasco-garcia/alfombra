@@ -150,6 +150,13 @@ const About = () => {
                     <p className='texto'>
                             Finalmente, los hilos se entrelazan para formar tu muestra.
                         </p>
+                        
+                </div>
+                <div className="mockups">
+                    <div className="twomock"><img src="../public/Mockup_T-01-1-1-1 72dpi.jpg" alt="" />
+                    <img src="../public/Mockup_T-01-2 72dpi.jpg" alt="" />
+                    </div>
+                    <img src="../public/Mockup_T-01-1-1-3 72dpi.jpg" alt="" />
                 </div>
                 <div className="buttoncontrol">
                     <Button content="¡Quiero crear!" onClick={() => setAbrir(true)} />
