@@ -24,7 +24,8 @@ const Reveal = () => {
         <section ref={rootRef} className={page == "Reveal" ? "reveal" : "oculto"}>
             <div className="headerReveal"></div>
             <div className="contenedorCard">
-                {mosaicos.length > 0 ? (
+                <div className='partedeArriba'>
+                    {mosaicos.length > 0 ? (
                     <Card nombre={mosaicos[0].nombre} fecha={mosaicos[0].fecha} respuestas={mosaicos[0].respuestas} />
                 ) : (
                     <div className="placeholder">
@@ -32,6 +33,11 @@ const Reveal = () => {
                         <Button content="Crear la primera" onClick={() => setPage("Preguntas")} />
                     </div>
                 )}
+                <div className="buttoncontrolGrande">
+                        <Button content="Ver la galería" onClick={() => setPage("Gallery")} />
+                        <Button content="Imprimir"/>
+                    </div>
+                </div>
                 <div className="leyendayboton">
                     <div className="leyendacolores">
                         {/* <div className="La1">

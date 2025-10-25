@@ -42,7 +42,7 @@ const About = () => {
                         en Bruma los recuerdos se entrelazan retratando tu memoria.
                         A través de un cuestionario al que puedes acceder en cualquier momento con el botón «¡Quiero crear!», 
                         te proponemos una serie de momentos y sensaciones para que vuelvas a
-                        ellos y pienses en qué medida son felices y cuánto se alejan en el
+                        ellos y en qué medida son felices y cuánto se alejan en el
                         tiempo. Cuando termines, tu muestra retrata el peso que tiene el
                         pasado frente al presente en tu memoria, al tiempo que ilustra cuánta
                         alegría baña esos recuerdos.
