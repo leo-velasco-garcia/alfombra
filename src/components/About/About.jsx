@@ -30,96 +30,97 @@ const About = () => {
             ref={rootRef}
             className={page === "About" ? "sectionAbout" : "oculto"}
         >
-            <div id="inicioseccion">
-            <h2 className="tituloAbout">
-                ¿Cómo funciona <span className="naming">Bruma</span>?
-            </h2>
-            </div>
-            <div className="texto">
-                <p className='texto'>
-                    Tejidos de la forma en que podría haber zurcido tu abuela un pantalón,
-                    en Bruma los recuerdos se entrelazan retratando tu memoria.
-                </p>
-                <p className='texto'>
-                    Te proponemos una serie de momentos y sensaciones, para que vuelvas a
-                    ellos y pienses en qué medida son felices y cuánto se alejan en el
-                    tiempo. Cuando termines, tu muestra retrata el peso que tiene el
-                    pasado frente al presente en tu memoria, al tiempo que ilustra cuánta
-                    alegría baña a esos recuerdos.
-                </p>
-                <div className="explicacion">
-                    <div className="cadaexplicacion">
-                        <PixelTransition
-                            firstContent={
-                                <img
-                                    src="../imgAboutVerde.svg"
-                                    alt="default pixel transition content, a cat!"
-                                    style={{ width: "100%", height: "100%", objectFit: "cover"}}
-                                />
-                            }
-                            secondContent={
-                                <div
-                                    style={{
-                                        width: "100%",
-                                        height: "100%",
-                                        display: "grid",
-                                        placeItems: "center",
-                                        backgroundColor: "rgb(0, 50, 15)",
-                                    }}
-                                >
-                                    <img src="../pruebaHilos.jpg" alt=""
-                                        style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-                                    {/* <p style={{ fontWeight: 500, fontSize: "2rem", color: "#ffffff" }}>Hilos Verticales</p> */}
-                                </div>
-                            }
-                            gridSize={12}
-                            pixelColor='#ffffff'
-                            animationStepDuration={0.4}
-                            className="custom-pixel-card"
-                        />
-                        <p className='texto'>
-                            Los hilos verticales se tiñen de un verde más intenso cuanto más reciente sea
-                            tu recuerdo.
-                        </p>
-                    </div>
-                    <div className="cadaexplicacion">
-
-                        <PixelTransition
-                            firstContent={
-                                <img
-                                    src="../imgAboutRoja.svg"
-                                    alt="default pixel transition content, a cat!"
-                                    style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                                />
-                            }
-                            secondContent={
-                                <div
-                                    style={{
-                                        width: "100%",
-                                        height: "100%",
-                                        display: "grid",
-                                        placeItems: "center",
-                                        backgroundColor: "rgb(159, 41, 26)",
-                                    }}
-                                >
-                                    <img src="../pruebaHilosRojos.jpg" alt=""
-                                        style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-                                    {/* <p style={{ fontWeight: 500, fontSize: "2rem", color: "#ffffff" }}>Hilos Verticales</p> */}
-                                </div>
-                            }
-                            gridSize={12}
-                            pixelColor='#ffffff'
-                            animationStepDuration={0.4}
-                            className="custom-pixel-card"
-                        />
-                        <p className='texto'>
-                            Si tu recuerdo es más alegre, los hilos horizontales toman un tono más amarillo.
-                            Mientras que los recuerdos más tristes se acercan a un rojo oscuro.
-                        </p>
-                    </div>
+            <div className="aboutContent" id="aqui">
+                <div id="inicioseccion">
+                    <h2 className="tituloAbout">
+                        ¿Cómo funciona <span className="naming">Bruma</span>?
+                    </h2>
                 </div>
-                <div className="hiloscombinados">
-                    <PixelTransition
+                <div className="texto">
+                    <p className='texto'>
+                        Tejidos de la forma en que podría haber zurcido tu abuela un pantalón,
+                        en Bruma los recuerdos se entrelazan retratando tu memoria.
+                    </p>
+                    <p className='texto'>
+                        Te proponemos una serie de momentos y sensaciones, para que vuelvas a
+                        ellos y pienses en qué medida son felices y cuánto se alejan en el
+                        tiempo. Cuando termines, tu muestra retrata el peso que tiene el
+                        pasado frente al presente en tu memoria, al tiempo que ilustra cuánta
+                        alegría baña a esos recuerdos.
+                    </p>
+                    <div className="explicacion">
+                        <div className="cadaexplicacion">
+                            <PixelTransition
+                                firstContent={
+                                    <img
+                                        src="../imgAboutVerde.svg"
+                                        alt="default pixel transition content, a cat!"
+                                        style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                                    />
+                                }
+                                secondContent={
+                                    <div
+                                        style={{
+                                            width: "100%",
+                                            height: "100%",
+                                            display: "grid",
+                                            placeItems: "center",
+                                            backgroundColor: "rgb(0, 50, 15)",
+                                        }}
+                                    >
+                                        <img src="../pruebaHilos.jpg" alt=""
+                                            style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                                        {/* <p style={{ fontWeight: 500, fontSize: "2rem", color: "#ffffff" }}>Hilos Verticales</p> */}
+                                    </div>
+                                }
+                                gridSize={12}
+                                pixelColor='#ffffff'
+                                animationStepDuration={0.4}
+                                className="custom-pixel-card"
+                            />
+                            <p className='texto'>
+                                Los hilos verticales se tiñen de un verde más intenso cuanto más reciente sea
+                                tu recuerdo.
+                            </p>
+                        </div>
+                        <div className="cadaexplicacion">
+
+                            <PixelTransition
+                                firstContent={
+                                    <img
+                                        src="../imgAboutRoja.svg"
+                                        alt="default pixel transition content, a cat!"
+                                        style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                                    />
+                                }
+                                secondContent={
+                                    <div
+                                        style={{
+                                            width: "100%",
+                                            height: "100%",
+                                            display: "grid",
+                                            placeItems: "center",
+                                            backgroundColor: "rgb(159, 41, 26)",
+                                        }}
+                                    >
+                                        <img src="../pruebaHilosRojos.jpg" alt=""
+                                            style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                                        {/* <p style={{ fontWeight: 500, fontSize: "2rem", color: "#ffffff" }}>Hilos Verticales</p> */}
+                                    </div>
+                                }
+                                gridSize={12}
+                                pixelColor='#ffffff'
+                                animationStepDuration={0.4}
+                                className="custom-pixel-card"
+                            />
+                            <p className='texto'>
+                                Si tu recuerdo es más alegre, los hilos horizontales toman un tono más amarillo.
+                                Mientras que los recuerdos más tristes se acercan a un rojo oscuro.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="hiloscombinados">
+                        <PixelTransition
                             firstContent={
                                 <img
                                     src="../comboCuadrados.jpg"
@@ -147,14 +148,14 @@ const About = () => {
                             animationStepDuration={0.4}
                             className="custom-pixel-card"
                         />
-                    <p className='texto'>
+                        <p className='texto'>
                             Finalmente, los hilos se entrelazan para formar tu muestra.
                         </p>
-                        
+
+                    </div>
+
                 </div>
-                
-            </div>
-            <div className="mockups">
+                <div className="mockups">
                     <h3 className="titulomockups">¿Qué puedes conseguir?</h3>
                     <img src="../Mockup_T-01-1-1-1 72dpi.jpg" alt="" />
                     <img src="../Mockup_T-01-2 72dpi.jpg" alt="" />
@@ -163,6 +164,8 @@ const About = () => {
                 <div className="buttoncontrol">
                     <Button content="¡Quiero crear!" onClick={() => setAbrir(true)} />
                 </div>
+            </div>
+
         </div>
     );
 };
