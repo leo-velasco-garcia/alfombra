@@ -48,6 +48,13 @@
     gap: 1rem;
 }
 
+.sectionAbout .hiloscombinados {
+    display: flex;
+    flex-flow: column;
+    /* align-items: center; */
+    gap: 1rem;
+}
+
 .sectionAbout .texto {
     display: flex;
     flex-flow: column;

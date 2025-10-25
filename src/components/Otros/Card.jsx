@@ -63,16 +63,10 @@ const Card = ({ nombre, fecha, respuestas, nuevoV }) => {
         )
     }
 
-    const pad = () => {
-        if (page == "Gallery") {
-            return(1)
-        }  else{
-            return(0)
-        }
-    }
+    
 
     return (
-        <div className='card' style={{padding: pad() + "rem"}}>
+        <div className={page == "Gallery"? "card cardGaleria" : "card cardReveal"} >
             <div className="imgCard" style={{ display: "grid", gridTemplateColumns: "repeat(" + respuestas.length + ", 1fr)", gridTemplateRows: "repeat(" + respuestas.length + ", 1fr)" }}>
 
                 {/* Recorrer el array de respuestas */}

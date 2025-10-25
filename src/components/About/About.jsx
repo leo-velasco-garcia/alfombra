@@ -147,6 +147,9 @@ const About = () => {
                             animationStepDuration={0.4}
                             className="custom-pixel-card"
                         />
+                    <p className='texto'>
+                            Finalmente, los hilos se entrelazan para formar tu muestra.
+                        </p>
                 </div>
                 <div className="buttoncontrol">
                     <Button content="¡Quiero crear!" onClick={() => setAbrir(true)} />

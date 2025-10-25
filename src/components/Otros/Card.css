@@ -7,6 +7,14 @@
     max-height: calc(100vh - 10rem);
 }
 
+.cardGaleria{
+    padding: 1rem;
+}
+
+.cardReveal{
+    padding: 0;
+}
+
 .card .imgCard{
     background-color: rgb(255, 255, 255);
     aspect-ratio: 1;
