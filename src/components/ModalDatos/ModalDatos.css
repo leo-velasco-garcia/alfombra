@@ -19,6 +19,7 @@
     max-height: fit-content;
     background-color: #fff;
     padding: 1rem;
+    
 }
 .ModalDatos .ModalDatosContent form{
     display: flex;
@@ -26,11 +27,13 @@
     flex-flow: column;
     /* border: 1px solid red; */
     /* height: 100%; */
+        font-family: 'Fracktif';
 }
 
 .ModalDatos .ModalDatosContent form input{
     padding: .5rem;
     border: var(--border-thick) solid #969696;
+    
 }
 
 .ModalDatos .ModalDatosContent form input:focus{
@@ -47,11 +50,14 @@
     width: 100%;
     justify-content: flex-end;
 }
-
+.ModalDatos .ModalDatosContent form .label{
+        font-family: 'Fracktif';
+}
 
 .ModalDatos .ModalDatosContent form #mensajeError{
     color: red;
     font-size: 0.8rem;
+        font-family: 'Fracktif';
 }
 
 .ModalDatos .ModalDatosContent form .hidden{

@@ -18,7 +18,7 @@ const ModalInactividad = () => {
         <div className={clase}>
             <div className="ModalInactividadContent">
                 <p className="tituloModal">¿Sigues ahí?</p>
-                <p>Pulsa en cualquier parte de la pantalla para continuar por donde lo dejaste</p>
+                <p className='texto'>Pulsa en cualquier parte de la pantalla para continuar por donde lo dejaste</p>
             </div>
         </div>
     )

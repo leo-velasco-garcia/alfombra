@@ -24,6 +24,6 @@
     border-top: var(--border-thick) solid var(--ink);
 }
 
-.card .descripcionCard .cardSpan{ max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.card .descripcionCard .nombreCard{ font-weight: 600; text-transform: uppercase; color: #4d4d4d;}
-.card .descripcionCard .fechaCard{ color: var(--muted); font-size: .9rem; }
+.card .descripcionCard .cardSpan{ font-family: 'Fracktif'; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.card .descripcionCard .nombreCard{ font-family: 'Fracktif'; font-weight: 600; text-transform: uppercase; color: #4d4d4d;}
+.card .descripcionCard .fechaCard{ font-family: 'Fracktif'; color: var(--muted); font-size: .9rem; }

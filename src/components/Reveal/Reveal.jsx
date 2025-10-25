@@ -51,14 +51,14 @@ const Reveal = () => {
                             <span>Presente</span>
                         </div> */}
                         <div className="La5">
-                            <span>Triste</span>
+                            <span className='texto'>Triste</span>
                             <div className="color5"></div>
-                            <span>Feliz</span>
+                            <span className='texto'>Feliz</span>
                         </div>
                         <div className="La6">
-                            <span>Presente</span>
+                            <span className='texto'>Presente</span>
                             <div className="color6"></div>
-                            <span>Pasado</span>
+                            <span className='texto'>Pasado</span>
                         </div>
                     </div>
                     <div className="buttoncontrol">

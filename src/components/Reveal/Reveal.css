@@ -29,11 +29,13 @@
     aspect-ratio: 1;
 
 }
+.reveal .contenedorCard .card .cardSpan{
+        font-family: 'Fracktif';
+}
 .reveal .contenedorCard .placeholder {
     text-align: center;
     padding: 2rem;
 }
-
 
 
 .reveal .contenedorCard .descripcionCard {
@@ -98,6 +100,9 @@
     height: 100%;
     gap: 0.5rem;
     /* border: 1px solid salmon; */
+}
+.texto {
+    font-family: 'Fracktif';
 }
 /* 
 .reveal .leyendayboton .leyendacolores .color1 {

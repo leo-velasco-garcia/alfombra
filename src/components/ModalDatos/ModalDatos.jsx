@@ -61,7 +61,7 @@ const ModalDatos = () => {
                 <form id='formulario' onSubmit={e => {
                     e.preventDefault();
                 }}>
-                    <label htmlFor="">¿Cómo vas a firmar tu obra?</label>
+                    <label className='label' htmlFor="">¿Cómo vas a firmar tu obra?</label>
                     <input type="text" placeholder='Nombre' id='inputNombre' />
                     <span className="hidden" id='mensajeError'>¿No has escrito nada? Necesitas al menos un pseudónimo.</span>
                     <div className="buttoncontrol">

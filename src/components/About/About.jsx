@@ -34,11 +34,11 @@ const About = () => {
                 ¿Cómo funciona <span className="naming">Bruma</span>?
             </h2>
             <div className="texto">
-                <p>
+                <p className='texto'>
                     Tejidos de la forma en que podría haber zurcido tu abuela un pantalón,
                     en Bruma los recuerdos se entrelazan retratando tu memoria.
                 </p>
-                <p>
+                <p className='texto'>
                     Te proponemos una serie de momentos y sensaciones, para que vuelvas a
                     ellos y pienses en qué medida son felices y cuánto se alejan en el
                     tiempo. Cuando termines, tu muestra retrata el peso que tiene el
@@ -75,7 +75,7 @@ const About = () => {
                             animationStepDuration={0.4}
                             className="custom-pixel-card"
                         />
-                        <p>
+                        <p className='texto'>
                             Los hilos verticales se vuelven más verdes cuanto más reciente sea
                             tu recuerdo.
                         </p>
@@ -110,7 +110,7 @@ const About = () => {
                             animationStepDuration={0.4}
                             className="custom-pixel-card"
                         />
-                        <p>
+                        <p className='texto'>
                             Los hilos horizontales se acercan al amarillo si el recuerdo es
                             feliz, o al rojo si es triste.
                         </p>
