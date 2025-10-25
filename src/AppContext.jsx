@@ -15,7 +15,7 @@ export const AppContextProvider = (props) => {
     const [inactividad, setInactividad] = useState(false)
     const [vistas, setVistas] = useState([]);
     const [completadas, setCompletadas] = useState([]);
-    const [pixelBlastColor, setPixelBlastColor] = useState();
+    const [pixelBlastColor, setPixelBlastColor] = useState("#9f291a");
     const [mosaicos, setMosaicos] = useState([{
         "nombre": "ZAZO",
         "fecha": "13:01 13/10/2025",
@@ -46,7 +46,8 @@ export const AppContextProvider = (props) => {
         // verticales
     ]
 
-    const coloresParaElegir = ["rgb(211, 211, 211)",
+    const coloresParaElegir = [
+        // "rgb(211, 211, 211)",
         "rgba(3, 75, 25, 1)",
         "#9f291aff",
         "rgb(241, 181, 91)",

@@ -1,17 +1,10 @@
 .text-pressure-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 5;
-    width: 50%;
-    height: auto;
-    pointer-events: none;
 }
 
 .text-pressure-container h1 {
     width: 100%;
     text-align: center;
+
 }
 
 .text-pressure-wrapper {

@@ -132,7 +132,7 @@ const TextPressure = ({
           const wdth = width ? getAttr(d, 0.7, 0.7) : 1;   //ancho de la letra//
           const wght = weight ? Math.floor(getAttr(d, 100, 900)) : 400;  //peso de la letra//
           const italVal = italic ? getAttr(d, 0, 0).toFixed(2) : 0;  //inclinacion de la Italica//
-          const alphaVal = alpha ? getAttr(d, 0, 1).toFixed(2) : 1;  //valor de la opacidad de la letra//
+          const alphaVal = alpha ? getAttr(d, 0.01, 1).toFixed(2) : 1;  //valor de la opacidad de la letra//
 
           span.style.opacity = alphaVal;  //transparencia de la letra//
           // Use CSS transforms instead of fontVariationSettings
@@ -193,7 +193,7 @@ const TextPressure = ({
         className={`text-pressure-title ${dynamicClassName}`}
         style={{
           fontFamily,
-          textTransform: 'uppercase',
+          // textTransform: 'uppercase',
           fontSize: fontSize,
           lineHeight,
           transform: `scale(1, ${scaleY})`,
@@ -204,7 +204,7 @@ const TextPressure = ({
           whiteSpace: 'nowrap',
           fontWeight: 100,
           width: '100%',
-          letterSpacing: '0.0em'  // ← Espaciado entre letras (ajusta este valor)
+          letterSpacing: '0em' //paciado entre letras (ajusta este valor)
         }}
       >
         {chars.map((char, i) => (

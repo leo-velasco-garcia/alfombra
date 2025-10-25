@@ -45,7 +45,7 @@ const Landing = () => {
             <div className="buttoncontrol">
                 <Button content="¡Quiero crear!" onClick={() => setAbrir(true)} />
             </div>
-            <div style={{ width: '100%', height: '100%', position: 'relative' }}
+            <div style={{ width: '100%', height: '100%', position: 'relative', zIndex: 1 }}
             // onClick={() => cambiarColorPixelBlast()} 
             >
                 <PixelBlast
@@ -53,12 +53,12 @@ const Landing = () => {
                     pixelSize={10}
                     color={pixelBlastColor}
                     patternScale={2}
-                    patternDensity={0.7}
-                    pixelSizeJitter={0.7}
+                    patternDensity={0.6}
+                    pixelSizeJitter={0.5}
                     enableRipples
                     rippleSpeed={0.4}
                     rippleThickness={0.12}
-                    rippleIntensityScale={1.5}
+                    rippleIntensityScale={1}
                     liquid
                     liquidStrength={0}
                     liquidRadius={0}
@@ -67,20 +67,23 @@ const Landing = () => {
                     edgeFade={0.0}
                     transparent
                 />
-                <div className="text-pressure-container">
-                    <TextPressure
-                        text="Bruma"
-                        fontFamily="PF Pixelscript"
-                        flex={true}
-                        alpha={false} //animacion de opacidad//
-                        stroke={false}
-                        width={true}
-                        weight={true}
-                        italic={true}
-                        textColor="#000000"
-                        strokeColor="#ff0000"
-                        minFontSize={isMobile ? 32 : 48}
-                    />
+                <div className="textpressurecontent">
+                    <div className="text-pressure-container">
+                        <TextPressure
+                            text="Bruma"
+                            fontFamily="PF Pixelscript"
+                            textTransform="none"
+                            flex={false}
+                            alpha={false} //animacion de opacidad//
+                            stroke={false}
+                            width={false}
+                            weight={false}
+                            italic={true}
+                            textColor="#000000"
+                            strokeColor="#ff0000"
+                            minFontSize={isMobile ? 32 : 48}
+                        />
+                    </div>
                 </div>
             </div>
         </section>

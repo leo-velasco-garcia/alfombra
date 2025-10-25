@@ -14,7 +14,24 @@
     transform: translateX(-50%);
     z-index: 10;
 }
+.landing .textpressurecontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh; /* usa vh en lugar de % si quieres ocupar toda la ventana */
+    border: 1px solid red;
+    background-color: aqua;
+    z-index: 10;
+    position: relative;
+}
 
-
+.landing .textpressurecontent .text-pressure-container {
+    font-family: 'PF Pixelscript';
+    z-index: 10;
+    width: fit-content;
+    pointer-events: none;
+}
+/* *{border: 1px solid red;} */
 
 

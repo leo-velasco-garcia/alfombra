@@ -21,120 +21,6 @@
     src: url("./assets/PFPixelscriptPro-subset.otf") format("opentype");
 }
 
-/* Cooper Hewitt Font Family */
-@font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('./assets/cooperHewitt/CooperHewitt-Thin.woff2') format('woff2');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('./assets/cooperHewitt/CooperHewitt-ThinItalic.woff2') format('woff2');
-    font-weight: 100;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('./assets/cooperHewitt/CooperHewitt-Light.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('./assets/cooperHewitt/CooperHewitt-LightItalic.woff2') format('woff2');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('./assets/cooperHewitt/CooperHewitt-Book.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('./assets/cooperHewitt/CooperHewitt-BookItalic.woff2') format('woff2');
-    font-weight: 400;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('./assets/cooperHewitt/CooperHewitt-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('./assets/cooperHewitt/CooperHewitt-MediumItalic.woff2') format('woff2');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('./assets/cooperHewitt/CooperHewitt-Semibold.woff2') format('woff2');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('./assets/cooperHewitt/CooperHewitt-SemiboldItalic.woff2') format('woff2');
-    font-weight: 600;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('./assets/cooperHewitt/CooperHewitt-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('./assets/cooperHewitt/CooperHewitt-BoldItalic.woff2') format('woff2');
-    font-weight: 700;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('./assets/cooperHewitt/CooperHewitt-Heavy.woff2') format('woff2');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('./assets/cooperHewitt/CooperHewitt-HeavyItalic.woff2') format('woff2');
-    font-weight: 800;
-    font-style: italic;
-    font-display: swap;
-}
-
-
 
 @font-face {
     font-family: 'Fracktif';
@@ -273,7 +159,7 @@
 /* 2. Remove default margin */
 * {
     margin: 0;
-    font-family: 'Fracktif', Courier, monospace;
+    font-family: 'PF Pixelscript';
     font-weight: 400;
 }
 

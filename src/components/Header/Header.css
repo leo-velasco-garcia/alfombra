@@ -35,6 +35,8 @@
     transition: 120ms ease-in-out;
     padding: 0.25rem 0.5rem;
     border: var(--border-thick) solid transparent;
+    
+    font-family: "Fracktif"
 }
 
 .header .enlaces .enlace:hover{ color: var(--dark-red); }
