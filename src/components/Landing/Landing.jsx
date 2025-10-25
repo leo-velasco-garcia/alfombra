@@ -45,7 +45,8 @@ const Landing = () => {
             <div className="buttoncontrol">
                 <Button content="¡Quiero crear!" onClick={() => setAbrir(true)} />
             </div>
-            <div style={{ width: '100%', height: '100%', position: 'relative', zIndex: 1 }}
+            {/* Contenedor de PixelBlast */}
+            <div style={{ width: '100%', height: '100%', position: 'absolute', top: 0, left: 0, zIndex: 1 }}
             // onClick={() => cambiarColorPixelBlast()} 
             >
                 <PixelBlast
@@ -67,23 +68,25 @@ const Landing = () => {
                     edgeFade={0.0}
                     transparent
                 />
-                <div className="textpressurecontent">
-                    <div className="text-pressure-container">
-                        <TextPressure
-                            text="Bruma"
-                            fontFamily="PF Pixelscript"
-                            textTransform="none"
-                            flex={false}
-                            alpha={false} //animacion de opacidad//
-                            stroke={false}
-                            width={false}
-                            weight={false}
-                            italic={true}
-                            textColor="#000000"
-                            strokeColor="#ff0000"
-                            minFontSize={isMobile ? 32 : 48}
-                        />
-                    </div>
+            </div>
+            
+            {/* Contenedor de TextPressure - separado */}
+            <div className="textpressurecontent">
+                <div className="text-pressure-container">
+                    <TextPressure
+                        text="Bruma"
+                        fontFamily="PF Pixelscript"
+                        textTransform="none"
+                        flex={false}
+                        alpha={true} //animacion de opacidad//
+                        stroke={false}
+                        width={false}
+                        weight={false}
+                        italic={true}
+                        textColor="#000000"
+                        strokeColor="#ff0000"
+                        minFontSize={isMobile ? 32 : 48}
+                    />
                 </div>
             </div>
         </section>
