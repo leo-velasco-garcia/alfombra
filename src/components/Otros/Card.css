@@ -12,7 +12,12 @@
 }
 
 .cardReveal{
-    /* padding: 0; */
+    padding: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
 }
 
 .card .imgCard{
@@ -20,6 +25,13 @@
     aspect-ratio: 1;
     max-height: calc(100% - 2rem);
     position: relative;
+    flex-shrink: 1;
+}
+
+.cardReveal .imgCard{
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
 }
 
 .card .descripcionCard{

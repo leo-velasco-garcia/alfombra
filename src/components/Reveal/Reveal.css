@@ -1,5 +1,5 @@
 * {
-    border: 1px solid red  ;
+    /* border: 1px solid red  ; */
 }
 
 .reveal {
@@ -15,23 +15,29 @@
     display: flex;
     flex-grow: 1;
     width: 100%;
+    height: 100%;
     border: var(--border-thick) solid var(--ink);
     justify-content: center;
     align-items: center;
     /* background: #fff; */
     padding: 1rem;
-    gap: 5rem;
+    gap: 2rem;
+     min-height: 0; /*Permite que flex items se contraigan */
 }
 
 .reveal .contenedorCard .card {
-    /* max-width: min(64rem, 100%); */
-    /* width: 100%; */
-    /* height: 100%; */
+    width: min(78vh, 78vw);
+    max-width: min(78vh, 78vw);
+    height: auto;
     gap: 0;
+    flex-shrink: 0;
+    align-self: center;
 }
 .reveal .contenedorCard .card .imgCard {
     aspect-ratio: 1;
-
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
 }
 .reveal .contenedorCard .card .cardSpan{
         font-family: 'Fracktif';
@@ -43,7 +49,7 @@
 
 
 .reveal .contenedorCard .descripcionCard {
-    padding-top: 0.25rem;
+    /* padding-top: 0.25rem; */
 }
 
 .reveal .leyendayboton {
@@ -158,6 +164,67 @@
 .reveal .leyendayboton .leyendacolores span {
     font-size: 1.5rem;
 }
+
+/* Media queries para diseño responsive
+@media (max-width: 768px) {
+    .reveal .contenedorCard {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+    
+    .reveal .contenedorCard .card {
+        width: min(70vh, 70vw);
+        max-width: min(70vh, 70vw);
+    }
+    
+    .reveal .leyendayboton {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .reveal .leyendayboton .leyendacolores {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .reveal .contenedorCard {
+        padding: 0.25rem;
+        gap: 0.5rem;
+    }
+    
+    .reveal .contenedorCard .card {
+        width: min(75vh, 75vw);
+        max-width: min(75vh, 75vw);
+    }
+    
+    .reveal .leyendayboton .leyendacolores .La5,
+    .reveal .leyendayboton .leyendacolores .La6 {
+        gap: 0.25rem;
+    }
+    
+    .reveal .leyendayboton .leyendacolores .color5,
+    .reveal .leyendayboton .leyendacolores .color6 {
+        width: 30px;
+    }
+    
+    .reveal .leyendayboton .leyendacolores span {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .reveal .contenedorCard {
+        gap: 3rem;
+        padding: 2rem;
+    }
+    
+    .reveal .contenedorCard .card {
+        width: min(50vh, 50vw);
+        max-width: min(50vh, 50vw);
+    }
+} */
 
 /* * {
     border: 1px solid red;
