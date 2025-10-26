@@ -4,9 +4,9 @@
     /* gap: 0.5rem; */
     border: var(--border-thick) solid var(--ink);
     /* background: #fff; */
-    max-height: calc(100vh - 10rem);
+    /* max-height: calc(100vh - 10rem);
     height: auto;
-    min-height: 250px; /* altura mínima agradable en todas las pantallas */
+    min-height: 250px; altura mínima agradable en todas las pantallas */
 
 }
 
@@ -43,7 +43,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: .25rem .5rem;
-    padding: 0.5rem 0.75rem;
+    padding: 0.3rem 0.5rem;
     border-top: var(--border-thick) solid var(--ink);
 }
 

@@ -160,6 +160,10 @@ const About = () => {
                     <img src="../Mockup_T-01-2 72dpi.jpg" alt="" />
                     <img src="../Mockup_T-01-1-1-3 72dpi.jpg" alt="" />
                 </div>
+                <div className="fanzine">
+                    <h3 className="titulomockups"> Fanzine sobre Bruma</h3>
+                    <img src="../Motion_Fanzine_GIF.gif" alt="" />
+                </div>
                 <div className="buttoncontrol">
                     <Button content="¡Quiero crear!" onClick={() => setAbrir(true)} />
                 </div>
