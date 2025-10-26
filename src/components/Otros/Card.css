@@ -1,14 +1,17 @@
-.card{
+.card {
     display: flex;
     flex-flow: column;
-    gap: 0.5rem;
+    /* gap: 0.5rem; */
     border: var(--border-thick) solid var(--ink);
     /* background: #fff; */
     max-height: calc(100vh - 10rem);
+    height: auto;
+    min-height: 250px; /* altura mínima agradable en todas las pantallas */
+
 }
 
 .cardGaleria{
-    padding: 1rem;
+    aspect-ratio: 1/1;
 }
 
 .cardReveal{

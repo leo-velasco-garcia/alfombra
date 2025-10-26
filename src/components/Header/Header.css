@@ -63,3 +63,9 @@
 }
 
 .header .enlaces .enlaceseleccionado{ border-color: var(--ink); }
+
+/* @media (max-width: 360px){
+    .header .enlaces .enlace a{
+    font-size: 1rem;
+    }
+} */
