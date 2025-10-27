@@ -177,7 +177,6 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* THEME: inspired by references — hi-contrast, retro print, grid, halftone */
 :root {
     --bg: #f3f3f3;
     --ink: #0a0a0a;
@@ -187,7 +186,7 @@ body {
     --light-green: rgb(211, 211, 211);
     --beige: rgb(241, 181, 91);
     --dark-red: rgb(159, 41, 26);
-    --light-red: #e63922;
+    --light-red: #e84934;
     --light-green: #5DA868;
 }
 

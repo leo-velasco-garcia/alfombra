@@ -161,12 +161,16 @@ const About = () => {
                     <img src="../Mockup_T-01-1-1-3 72dpi.jpg" alt="" />
                 </div>
                 <div className="fanzine">
-                    <h3 className="titulomockups"> Fanzine sobre Bruma</h3>
+                    <h3 className="titulomockups">Nuestro fanzine</h3>
+                    <p className='texto'>
+                                Puedes encontrarlo en el Museo de Artes Decorativas
+                            </p>
                     <img src="../Motion_Fanzine_GIF.gif" alt="" />
                 </div>
                 <div className="buttoncontrol">
                     <Button content="¡Quiero crear!" onClick={() => setAbrir(true)} />
                 </div>
+                
             </div>
 
         </div>
