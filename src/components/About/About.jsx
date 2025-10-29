@@ -8,6 +8,14 @@ import PixelTransition from '../PixelTransition/PixelTransition';
 //assets
 import combo from '../../assets/img/combo.jpg';
 import comboCuadrados from '../../assets/img/comboCuadrados.jpg';
+import imgAboutRoja from '../../assets/img/imgAboutRoja.svg';
+import imgAboutVerde from '../../assets/img/imgAboutVerde.svg';
+import mockup1 from '../../assets/img/Mockup_T-01-1-1-1 72dpi.jpg';
+import mockup2 from '../../assets/img/Mockup_T-01-1-1-3 72dpi.jpg';
+import mockup3 from '../../assets/img/Mockup_T-01-2 72dpi.jpg';
+import fanzine from '../../assets/img/Motion_Fanzine_GIF.gif';
+import hilosVerdes from '../../assets/img/pruebaHilos.jpg';
+import hilosRojos from '../../assets/img/pruebaHilosRojos.jpg';
 
 const About = () => {
     const { page, setPage, abrir, setAbrir, mosaicos } = useContext(AppContext);
@@ -56,7 +64,7 @@ const About = () => {
                             <PixelTransition
                                 firstContent={
                                     <img
-                                        src="/assets/imgAboutVerde.svg"
+                                        src={imgAboutVerde}
                                         alt="default pixel transition content, a cat!"
                                         style={{ width: "100%", height: "100%", objectFit: "cover" }}
                                     />
@@ -71,7 +79,7 @@ const About = () => {
                                             backgroundColor: "rgb(0, 50, 15)",
                                         }}
                                     >
-                                        <img src="/assets/pruebaHilos.jpg" alt=""
+                                        <img src={hilosVerdes} alt=""
                                             style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                                         {/* <p style={{ fontWeight: 500, fontSize: "2rem", color: "#ffffff" }}>Hilos Verticales</p> */}
                                     </div>
@@ -91,7 +99,7 @@ const About = () => {
                             <PixelTransition
                                 firstContent={
                                     <img
-                                        src="/assets/imgAboutRoja.svg"
+                                        src={imgAboutRoja}
                                         alt="default pixel transition content, a cat!"
                                         style={{ width: "100%", height: "100%", objectFit: "cover" }}
                                     />
@@ -106,7 +114,7 @@ const About = () => {
                                             backgroundColor: "rgb(159, 41, 26)",
                                         }}
                                     >
-                                        <img src="/assets/pruebaHilosRojos.jpg" alt=""
+                                        <img src={hilosRojos} alt=""
                                             style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                                         {/* <p style={{ fontWeight: 500, fontSize: "2rem", color: "#ffffff" }}>Hilos Verticales</p> */}
                                     </div>
@@ -160,16 +168,16 @@ const About = () => {
                 </div>
                 <div className="mockups">
                     <h3 className="titulomockups">¿Qué puedes conseguir?</h3>
-                    <img src="/assets/Mockup_T-01-1-1-1 72dpi.jpg" alt="" />
-                    <img src="/assets/Mockup_T-01-2 72dpi.jpg" alt="" />
-                    <img src="/assets/Mockup_T-01-1-1-3 72dpi.jpg" alt="" />
+                    <img src={mockup1} alt="" />
+                    <img src={mockup2} alt="" />
+                    <img src={mockup3} alt="" />
                 </div>
                 <div className="fanzine">
                     <h3 className="titulomockups">Nuestro fanzine</h3>
                     <p className='texto'>
                                 Puedes encontrarlo en el Museo de Artes Decorativas
                             </p>
-                    <img src="/assets/Motion_Fanzine_GIF.gif" alt="" />
+                    <img src={fanzine} alt="" />
                 </div>
                 <div className="buttoncontrol">
                     <Button content="¡Quiero crear!" onClick={() => setAbrir(true)} />
