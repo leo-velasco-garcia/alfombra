@@ -52,7 +52,7 @@ const About = () => {
                             <PixelTransition
                                 firstContent={
                                     <img
-                                        src="../imgAboutVerde.svg"
+                                        src="/assets/imgAboutVerde.svg"
                                         alt="default pixel transition content, a cat!"
                                         style={{ width: "100%", height: "100%", objectFit: "cover" }}
                                     />
@@ -67,7 +67,7 @@ const About = () => {
                                             backgroundColor: "rgb(0, 50, 15)",
                                         }}
                                     >
-                                        <img src="../pruebaHilos.jpg" alt=""
+                                        <img src="/assets/pruebaHilos.jpg" alt=""
                                             style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                                         {/* <p style={{ fontWeight: 500, fontSize: "2rem", color: "#ffffff" }}>Hilos Verticales</p> */}
                                     </div>
@@ -87,7 +87,7 @@ const About = () => {
                             <PixelTransition
                                 firstContent={
                                     <img
-                                        src="../imgAboutRoja.svg"
+                                        src="/assets/imgAboutRoja.svg"
                                         alt="default pixel transition content, a cat!"
                                         style={{ width: "100%", height: "100%", objectFit: "cover" }}
                                     />
@@ -102,7 +102,7 @@ const About = () => {
                                             backgroundColor: "rgb(159, 41, 26)",
                                         }}
                                     >
-                                        <img src="../pruebaHilosRojos.jpg" alt=""
+                                        <img src="/assets/pruebaHilosRojos.jpg" alt=""
                                             style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                                         {/* <p style={{ fontWeight: 500, fontSize: "2rem", color: "#ffffff" }}>Hilos Verticales</p> */}
                                     </div>
@@ -122,7 +122,7 @@ const About = () => {
                         <PixelTransition
                             firstContent={
                                 <img
-                                    src="../comboCuadrados.jpg"
+                                    src="/assets/comboCuadrados.jpg"
                                     alt="default pixel transition content, a cat!"
                                     style={{ width: "100%", height: "100%", objectFit: "cover" }}
                                 />
@@ -137,7 +137,7 @@ const About = () => {
                                         backgroundColor: "rgb(159, 41, 26)",
                                     }}
                                 >
-                                    <img src="../combo.jpg" alt=""
+                                    <img src="/assets/combo.jpg" alt=""
                                         style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                                     {/* <p style={{ fontWeight: 500, fontSize: "2rem", color: "#ffffff" }}>Hilos Verticales</p> */}
                                 </div>
@@ -156,16 +156,16 @@ const About = () => {
                 </div>
                 <div className="mockups">
                     <h3 className="titulomockups">¿Qué puedes conseguir?</h3>
-                    <img src="../Mockup_T-01-1-1-1 72dpi.jpg" alt="" />
-                    <img src="../Mockup_T-01-2 72dpi.jpg" alt="" />
-                    <img src="../Mockup_T-01-1-1-3 72dpi.jpg" alt="" />
+                    <img src="/assets/Mockup_T-01-1-1-1 72dpi.jpg" alt="" />
+                    <img src="/assets/Mockup_T-01-2 72dpi.jpg" alt="" />
+                    <img src="/assets/Mockup_T-01-1-1-3 72dpi.jpg" alt="" />
                 </div>
                 <div className="fanzine">
                     <h3 className="titulomockups">Nuestro fanzine</h3>
                     <p className='texto'>
                                 Puedes encontrarlo en el Museo de Artes Decorativas
                             </p>
-                    <img src="../Motion_Fanzine_GIF.gif" alt="" />
+                    <img src="/assets/Motion_Fanzine_GIF.gif" alt="" />
                 </div>
                 <div className="buttoncontrol">
                     <Button content="¡Quiero crear!" onClick={() => setAbrir(true)} />
