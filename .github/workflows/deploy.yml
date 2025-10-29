@@ -25,10 +25,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 10
+          node-version: 22
 
       - name: Install dependencies
-        run: npm ci
+        run: npm i
 
       - name: Build Vite project
         run: npm run build
