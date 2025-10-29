@@ -6,7 +6,8 @@ import Button from "../Otros/Button";
 import PixelTransition from '../PixelTransition/PixelTransition';
 
 //assets
-import combo from './assets/img/combo.jpg'
+import combo from '../../assets/img/combo.jpg';
+import comboCuadrados from '../../assets/img/comboCuadrados.jpg';
 
 const About = () => {
     const { page, setPage, abrir, setAbrir, mosaicos } = useContext(AppContext);
@@ -125,7 +126,7 @@ const About = () => {
                         <PixelTransition
                             firstContent={
                                 <img
-                                    src="/assets/comboCuadrados.jpg"
+                                    src={comboCuadrados}
                                     alt="default pixel transition content, a cat!"
                                     style={{ width: "100%", height: "100%", objectFit: "cover" }}
                                 />
