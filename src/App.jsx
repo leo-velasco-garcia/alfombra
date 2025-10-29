@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react'
 import Header from './components/Header/Header'
-import Galeria from './components/GalerIa/Galeria'
+import Galeria from './components/Galeria/Galeria'
 import './App.css'
 import Landing from './components/Landing/Landing'
 import Preguntas from './components/Preguntas/Preguntas'
