@@ -3,7 +3,7 @@ name: Build and Deploy React + Vite to GitHub Pages
 on:
   push:
     branches:
-      - parasubir
+      - main
 
 permissions:
   contents: read
