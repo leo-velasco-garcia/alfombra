@@ -5,6 +5,9 @@ import { AppContext } from "../../AppContext";
 import Button from "../Otros/Button";
 import PixelTransition from '../PixelTransition/PixelTransition';
 
+//assets
+import combo from './assets/img/combo.jpg'
+
 const About = () => {
     const { page, setPage, abrir, setAbrir, mosaicos } = useContext(AppContext);
     const rootRef = useRef(null);
@@ -137,7 +140,7 @@ const About = () => {
                                         backgroundColor: "rgb(159, 41, 26)",
                                     }}
                                 >
-                                    <img src="/assets/combo.jpg" alt=""
+                                    <img src={combo} alt=""
                                         style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                                     {/* <p style={{ fontWeight: 500, fontSize: "2rem", color: "#ffffff" }}>Hilos Verticales</p> */}
                                 </div>
