@@ -44,11 +44,11 @@
 @supports (-webkit-touch-callout: none) {
     @media only screen and (max-width: 750px) {
         .galeria .buttoncontrol{
-            bottom: 5rem;
+            bottom: 7rem;
         }
 
         .galeria .content {
-            padding-bottom: 10rem;
+            padding-bottom: 12rem;
         }
     }
 }
