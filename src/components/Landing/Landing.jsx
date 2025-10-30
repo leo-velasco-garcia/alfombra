@@ -85,7 +85,7 @@ const Landing = () => {
                         italic={true}
                         textColor="#000000"
                         strokeColor="#ff0000"
-                        minFontSize={isMobile ? 32 : 48}
+                        minFontSize={isMobile ? 24 : 48}
                     />
                 </div>
             </div>

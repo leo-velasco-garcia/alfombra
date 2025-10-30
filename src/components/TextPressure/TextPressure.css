@@ -1,15 +1,18 @@
-
-
 .text-pressure-container h1 {
     width: 100%;
     text-align: center;
-    font-size: 10rem;   
+    font-size: 10rem;
     /*–––––––––––––––––––––––––––AQUÍ SE CAMBIA EL TAMAÑO---------------------------------------*/
 }
 
 .text-pressure-wrapper {
     width: 100%;
     height: auto;
+    z-index: 1;
+}
+
+.text-pressure-container {
+    z-index: 1;
 }
 
 /* Responsive adjustments */
@@ -19,8 +22,9 @@
     .text-pressure-container {
         padding: 0 1rem;
     }
-    .text-pressure-container h1{
-    font-size: 9rem;  
+
+    .text-pressure-container h1 {
+        font-size: 9rem;
     }
 }
 
@@ -28,8 +32,9 @@
     .text-pressure-container {
         padding: 0 0.5rem;
     }
-    .text-pressure-container h1{
-    font-size: 8rem;  
+
+    .text-pressure-container h1 {
+        font-size: 8rem;
     }
 }
 
@@ -37,8 +42,9 @@
     .text-pressure-container {
         padding: 0 1rem;
     }
-    .text-pressure-container h1{
-    font-size: 6rem;  
+
+    .text-pressure-container h1 {
+        font-size: 6rem;
     }
 }
 
@@ -46,8 +52,9 @@
     .text-pressure-container {
         padding: 0 0.5rem;
     }
-    .text-pressure-container h1{
-    font-size: 5rem;  
+
+    .text-pressure-container h1 {
+        font-size: 5rem;
     }
 }
 
@@ -55,9 +62,15 @@
     .text-pressure-container {
         padding: 0 0.5rem;
     }
-    .text-pressure-container h1{
-    font-size: 4rem;  
+
+    .text-pressure-container h1 {
+        font-size: 4rem;
     }
 }
 
 
+@media screen and not (hover){
+    .text-pressure-container {
+        display: none;
+    }
+}
