@@ -14,6 +14,14 @@
     transform: translateX(-50%);
     z-index: 10;
 }
+
+@supports (-webkit-touch-callout: none) {
+    @media only screen and (max-width: 750px) {
+        .landing .buttoncontrol{
+            bottom: 5rem;
+        }
+    }
+}
 .landing .textpressurecontent {
     display: flex;
     justify-content: center;
