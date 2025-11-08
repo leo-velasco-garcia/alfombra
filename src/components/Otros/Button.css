@@ -1,4 +1,4 @@
-.Button{
+.Button {
     border: var(--border-thick) solid var(--ink);
     padding: 0.5rem 1rem;
     transition: 150ms ease-in-out;
@@ -6,13 +6,25 @@
     font-weight: 500;
     line-height: 1.5rem;
     letter-spacing: 0.02em;
-        font-family: 'Fracktif';
+    font-family: 'Fracktif';
+    color: black;
 }
 
-.Button:hover{ transform: scale(102%);} 
+.Button:hover {
+    transform: scale(102%);
+}
 
 /* Accent variants via data attributes */
-.Button[data-variant="orange"]{ background: var(--accent-orange); color: #fff; }
-.Button[data-variant="green"]{ background: var(--accent-green); color: #0c2818; }
-.Button[data-variant="outline"]{ background: transparent; }
+.Button[data-variant="orange"] {
+    background: var(--accent-orange);
+    color: #fff;
+}
 
+.Button[data-variant="green"] {
+    background: var(--accent-green);
+    color: #0c2818;
+}
+
+.Button[data-variant="outline"] {
+    background: transparent;
+}

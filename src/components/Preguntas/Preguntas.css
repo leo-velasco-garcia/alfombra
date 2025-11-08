@@ -1,12 +1,10 @@
-
-
-.oculto{
+.oculto {
     display: none;
 }
 
 
 
-.preguntas{
+.preguntas {
     height: 100%;
     width: 100%;
     max-width: 65rem;
@@ -18,9 +16,9 @@
     margin: 0 auto;
 }
 
-.preguntas .colocador{
+.preguntas .colocador {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     height: fit-content;
     width: 100%;
@@ -29,69 +27,73 @@
     /* padding: 1rem; */
 }
 
-.preguntas .headerPreguntas button{
+.preguntas .headerPreguntas button {
     width: fit-content;
     justify-self: end;
 }
-.preguntas .headerPreguntas .whatever{
+
+.preguntas .headerPreguntas .whatever {
     display: flex;
     justify-content: flex-end;
 }
-.preguntas .headerPreguntas .whatever button{
+
+.preguntas .headerPreguntas .whatever button {
     padding: 0;
 }
-.preguntas .headerPreguntas{
+
+.preguntas .headerPreguntas {
     /* background-color: aquamarine; */
     display: flex;
-    flex-flow: column;   
+    flex-flow: column;
     gap: .5rem;
 }
 
-.preguntas span{
+.preguntas span {
     text-align: end;
     font-size: 1rem;
     color: var(--ink);
 }
 
 
-.preguntas .headerPreguntas .titulo2{
-    font-size: 2rem;
+.preguntas .headerPreguntas .titulo2 {
     margin-top: 1rem;
     line-height: 4rem;
     font-weight: 900;
-    
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: baseline;
+
     /* transform: translateY(1rem); */
     /* font-family: "PF Pixelscript"; */
 
 }
 
-.preguntas .headerPreguntas .titulo2 .cambioTipo{
-    font-family: "PF Pixelscript";
+.preguntas .headerPreguntas .titulo2 .cambioTipo {
     font-size: 5rem;
     margin-top: 1rem;
     line-height: 4rem;
     font-weight: 500;
-    
-    /* transform: translateY(1rem); */
-    /* font-family: "PF Pixelscript"; */
-
+    text-wrap: nowrap;
 }
 
-.preguntas .headerPreguntas .parrafo{
+
+.preguntas .headerPreguntas .parrafo {
     font-size: 2rem;
+    line-height: 2rem;
     font-weight: 500;
     text-align: end;
-        font-family: 'Fracktif';
+    font-family: 'Fracktif';
 }
 
 /* framed white panel for controls */
-.preguntas .sliders, .preguntas .botones{
+.preguntas .sliders,
+.preguntas .botones {
     background: #fff;
     border: var(--border-thick) solid var(--ink);
     padding: 1rem;
 }
 
-.preguntas .botones{
+.preguntas .botones {
     display: flex;
     align-items: center;
     flex-flow: row;
@@ -100,41 +102,86 @@
     width: 100%;
     /* border: 1px salmon solid; */
 }
-.preguntas .botones span{
-    padding-right: 1.2rem;
-        font-family: 'Fracktif';
-}
-.preguntas .sliders{
-    display: flex;
-    flex-flow: column;
-    gap: 1rem;   
-    
+
+.preguntas .botones span {
+    font-family: 'Fracktif';
 }
 
-.preguntas .sliders .slider{
+.preguntas .sliders {
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+
+}
+
+.preguntas .sliders .slider {
     display: grid;
     grid-template-columns: 8rem 1fr 8rem;
     gap: 2rem;
     align-items: center;
-    
+
 }
 
-.preguntas .sliders .labelIzq{
+.preguntas .sliders .labelIzq {
     width: 100%;
     text-align: end;
 }
 
-.preguntas .sliders .label{
+.preguntas .sliders .label {
     font-size: 1.5rem;
     /* font-weight: 600; */
-        font-family: 'Fracktif';
+    font-family: 'Fracktif';
 }
 
-.preguntas .sliders .labelDcha{
+.preguntas .sliders .labelDcha {
     text-align: start;
 }
+
+@media (max-width: 580px) {
+    .preguntas .headerPreguntas .titulo2 .cambioTipo {
+        font-size: 3.5rem;
+        line-height: 3rem;
+    }
+
+    .preguntas .sliders .slider {
+        grid-template-columns: 4rem 1fr 4rem;
+        gap: 1rem;
+    }
+
+    .preguntas .sliders .label {
+        font-size: 1rem;
+    }
+
+    .preguntas .botones span {
+        font-size: 0.8rem;
+    }
+
+    .preguntas .headerPreguntas .parrafo {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    }
+}
+
 /* MUI slider theming */
-.preguntas .MuiSlider-root{ color: var(--ink); height: 4px; }
-.preguntas .MuiSlider-rail{ opacity: 1; background-color: var(--ink); height: 2px; }
-.preguntas .MuiSlider-track{ display:none; }
-.preguntas .MuiSlider-thumb{ width: 18px; height: 18px; border: 2px solid var(--ink); background: #fff; border-radius: 2px; }
+.preguntas .MuiSlider-root {
+    color: var(--ink);
+    height: 4px;
+}
+
+.preguntas .MuiSlider-rail {
+    opacity: 1;
+    background-color: var(--ink);
+    height: 2px;
+}
+
+.preguntas .MuiSlider-track {
+    display: none;
+}
+
+.preguntas .MuiSlider-thumb {
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--ink);
+    background: #fff;
+    border-radius: 2px;
+}
